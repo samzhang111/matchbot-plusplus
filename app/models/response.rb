@@ -1,4 +1,4 @@
 class Response < ActiveRecord::Base
-  belongs_to :user
-  validates_presence_of :user_id, :content
+  belongs_to :user     , :inverse_of => :responses
+  validates_presence_of :content #todo: validate user?
 end

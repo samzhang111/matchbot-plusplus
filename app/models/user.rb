@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  has_many :responses, :dependent => :destroy
+  has_many :responses, :dependent => :destroy, :inverse_of => :user
   accepts_nested_attributes_for :responses#, :reject_if => lambda { |a| a[:content].blank? }, :allow_destroy => true
 
   before_save { self.email = email.downcase }

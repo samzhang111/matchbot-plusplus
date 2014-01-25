@@ -7034,3 +7034,784 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-25 11:17:17 -0500
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-25 11:17:17 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-25 11:27:05 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html (15.5ms)
+  Rendered users/new.html.erb within layouts/application (294.8ms)
+Completed 200 OK in 551ms (Views: 369.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/response.css?body=1" for 127.0.0.1 at 2014-01-25 11:27:06 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-01-25 11:27:07 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-25 11:27:07 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-25 11:27:07 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-25 11:27:07 -0500
+
+
+Started GET "/assets/response.js?body=1" for 127.0.0.1 at 2014-01-25 11:27:07 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-25 11:27:07 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-25 11:27:07 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-01-25 11:27:07 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-25 11:27:07 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-25 11:27:07 -0500
+
+
+Started POST "/users" for 127.0.0.1 at 2014-01-25 11:27:14 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6Imx7OGTklSxUum6XVntnE9QsSDc14295D03YWwU9qo=", "user"=>{"username"=>"gdsaf", "email"=>"agdsdfs@example.com", "responses_attributes"=>{"0"=>{"content"=>"gadsfdas"}, "1"=>{"content"=>""}, "2"=>{"content"=>""}}}, "commit"=>"Submit"}
+Unpermitted parameters: responses_attributes
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('agdsdfs@example.com') LIMIT 1[0m
+  [1m[35mSQL (117.5ms)[0m  INSERT INTO "users" ("created_at", "email", "updated_at", "username") VALUES (?, ?, ?, ?)  [["created_at", Sat, 25 Jan 2014 16:27:14 UTC +00:00], ["email", "agdsdfs@example.com"], ["updated_at", Sat, 25 Jan 2014 16:27:14 UTC +00:00], ["username", "gdsaf"]]
+  [1m[36m (5.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/users/18
+Completed 302 Found in 175ms (ActiveRecord: 123.0ms)
+
+
+Started GET "/users/18" for 127.0.0.1 at 2014-01-25 11:27:14 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "18"]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "responses" WHERE "responses"."user_id" = ?[0m  [["user_id", 18]]
+  [1m[35mResponse Load (0.2ms)[0m  SELECT "responses".* FROM "responses" WHERE "responses"."user_id" = ?  [["user_id", 18]]
+  Rendered users/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 16ms (Views: 11.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/response.css?body=1" for 127.0.0.1 at 2014-01-25 11:27:14 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-01-25 11:27:14 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-25 11:27:14 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-25 11:27:14 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-25 11:27:14 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-25 11:27:14 -0500
+
+
+Started GET "/assets/response.js?body=1" for 127.0.0.1 at 2014-01-25 11:27:14 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-01-25 11:27:14 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-25 11:27:14 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-25 11:27:14 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-25 11:27:14 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-25 11:27:35 -0500
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html (0.1ms)
+  Rendered users/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 45ms (Views: 23.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-25 11:27:35 -0500
+
+
+Started GET "/assets/response.css?body=1" for 127.0.0.1 at 2014-01-25 11:27:35 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-25 11:27:35 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-01-25 11:27:35 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-25 11:27:35 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-25 11:27:35 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-25 11:27:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-25 11:27:35 -0500
+
+
+Started GET "/assets/response.js?body=1" for 127.0.0.1 at 2014-01-25 11:27:35 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-25 11:27:35 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-01-25 11:27:35 -0500
+
+
+Started POST "/users" for 127.0.0.1 at 2014-01-25 11:27:40 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6Imx7OGTklSxUum6XVntnE9QsSDc14295D03YWwU9qo=", "user"=>{"username"=>"gsadff", "email"=>"dgsads@example.com", "responses_attributes"=>{"0"=>{"content"=>"gadasdf"}, "1"=>{"content"=>""}, "2"=>{"content"=>""}}}, "commit"=>"Submit"}
+Unpermitted parameters: responses_attributes
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('dgsads@example.com') LIMIT 1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "updated_at", "username") VALUES (?, ?, ?, ?)[0m  [["created_at", Sat, 25 Jan 2014 16:27:40 UTC +00:00], ["email", "dgsads@example.com"], ["updated_at", Sat, 25 Jan 2014 16:27:40 UTC +00:00], ["username", "gsadff"]]
+  [1m[35m (5.6ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/users/19
+Completed 302 Found in 16ms (ActiveRecord: 7.5ms)
+
+
+Started GET "/users/19" for 127.0.0.1 at 2014-01-25 11:27:40 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "19"]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "responses" WHERE "responses"."user_id" = ?  [["user_id", 19]]
+  [1m[36mResponse Load (0.2ms)[0m  [1mSELECT "responses".* FROM "responses" WHERE "responses"."user_id" = ?[0m  [["user_id", 19]]
+  Rendered users/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 14ms (Views: 10.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/response.css?body=1" for 127.0.0.1 at 2014-01-25 11:27:41 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-01-25 11:27:41 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-25 11:27:41 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-25 11:27:41 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-25 11:27:41 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-25 11:27:41 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-25 11:27:41 -0500
+
+
+Started GET "/assets/response.js?body=1" for 127.0.0.1 at 2014-01-25 11:27:41 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-25 11:27:41 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-25 11:27:41 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-01-25 11:27:41 -0500
+
+
+Started GET "/users/19" for 127.0.0.1 at 2014-01-25 11:28:14 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "19"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "responses" WHERE "responses"."user_id" = ?[0m  [["user_id", 19]]
+  [1m[35mResponse Load (0.2ms)[0m  SELECT "responses".* FROM "responses" WHERE "responses"."user_id" = ?  [["user_id", 19]]
+  Rendered users/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 38ms (Views: 12.2ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-25 11:28:14 -0500
+
+
+Started GET "/assets/response.css?body=1" for 127.0.0.1 at 2014-01-25 11:28:14 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-25 11:28:14 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-01-25 11:28:14 -0500
+
+
+Started GET "/assets/response.js?body=1" for 127.0.0.1 at 2014-01-25 11:28:14 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-25 11:28:14 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-25 11:28:14 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-25 11:28:14 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-01-25 11:28:14 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-25 11:28:14 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-25 11:28:15 -0500
+
+
+Started POST "/users" for 127.0.0.1 at 2014-01-25 11:28:20 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6Imx7OGTklSxUum6XVntnE9QsSDc14295D03YWwU9qo=", "user"=>{"username"=>"gsadff", "email"=>"dgsaads@example.com", "responses_attributes"=>{"0"=>{"content"=>"gadasdf"}, "1"=>{"content"=>""}, "2"=>{"content"=>""}}}, "commit"=>"Submit"}
+Unpermitted parameters: responses_attributes
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('dgsaads@example.com') LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "updated_at", "username") VALUES (?, ?, ?, ?)[0m  [["created_at", Sat, 25 Jan 2014 16:28:20 UTC +00:00], ["email", "dgsaads@example.com"], ["updated_at", Sat, 25 Jan 2014 16:28:20 UTC +00:00], ["username", "gsadff"]]
+  [1m[35m (7.4ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/users/20
+Completed 302 Found in 18ms (ActiveRecord: 8.8ms)
+
+
+Started GET "/users/20" for 127.0.0.1 at 2014-01-25 11:28:20 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "20"]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "responses" WHERE "responses"."user_id" = ?  [["user_id", 20]]
+  [1m[36mResponse Load (0.1ms)[0m  [1mSELECT "responses".* FROM "responses" WHERE "responses"."user_id" = ?[0m  [["user_id", 20]]
+  Rendered users/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 26ms (Views: 19.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-01-25 11:28:20 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-25 11:28:20 -0500
+
+
+Started GET "/assets/response.css?body=1" for 127.0.0.1 at 2014-01-25 11:28:20 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-25 11:28:20 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-25 11:28:20 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-25 11:28:20 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-25 11:28:20 -0500
+
+
+Started GET "/assets/response.js?body=1" for 127.0.0.1 at 2014-01-25 11:28:20 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-25 11:28:20 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-01-25 11:28:20 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-25 11:28:20 -0500
+
+
+Started POST "/users" for 127.0.0.1 at 2014-01-25 11:28:26 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6Imx7OGTklSxUum6XVntnE9QsSDc14295D03YWwU9qo=", "user"=>{"username"=>"gsadff", "email"=>"dgsaaads@example.com", "responses_attributes"=>{"0"=>{"content"=>"gadasdf"}, "1"=>{"content"=>"fdsafs"}, "2"=>{"content"=>"gadsdsad"}}}, "commit"=>"Submit"}
+Unpermitted parameters: responses_attributes
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('dgsaaads@example.com') LIMIT 1[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "users" ("created_at", "email", "updated_at", "username") VALUES (?, ?, ?, ?)  [["created_at", Sat, 25 Jan 2014 16:28:26 UTC +00:00], ["email", "dgsaaads@example.com"], ["updated_at", Sat, 25 Jan 2014 16:28:26 UTC +00:00], ["username", "gsadff"]]
+  [1m[36m (6.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/users/21
+Completed 302 Found in 14ms (ActiveRecord: 8.7ms)
+
+
+Started GET "/users/21" for 127.0.0.1 at 2014-01-25 11:28:26 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "21"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "responses" WHERE "responses"."user_id" = ?[0m  [["user_id", 21]]
+  [1m[35mResponse Load (0.1ms)[0m  SELECT "responses".* FROM "responses" WHERE "responses"."user_id" = ?  [["user_id", 21]]
+  Rendered users/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 38ms (Views: 10.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-25 11:28:27 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-25 11:28:27 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-01-25 11:28:27 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-25 11:28:27 -0500
+
+
+Started GET "/assets/response.css?body=1" for 127.0.0.1 at 2014-01-25 11:28:27 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-25 11:28:27 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-25 11:28:27 -0500
+
+
+Started GET "/assets/response.js?body=1" for 127.0.0.1 at 2014-01-25 11:28:27 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-01-25 11:28:27 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-25 11:28:27 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-25 11:28:27 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-25 11:29:44 -0500
+
+SyntaxError (/Users/ritazevallos/Projects/matchbot/app/controllers/users_controller.rb:29: syntax error, unexpected ')', expecting keyword_end):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__1280845889519450643__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-25 11:29:54 -0500
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html (0.1ms)
+  Rendered users/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 44ms (Views: 22.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-25 11:29:54 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-25 11:29:55 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-01-25 11:29:55 -0500
+
+
+Started GET "/assets/response.css?body=1" for 127.0.0.1 at 2014-01-25 11:29:55 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-25 11:29:55 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-25 11:29:55 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-25 11:29:55 -0500
+
+
+Started GET "/assets/response.js?body=1" for 127.0.0.1 at 2014-01-25 11:29:55 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-01-25 11:29:55 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-25 11:29:55 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-25 11:29:55 -0500
+
+
+Started POST "/users" for 127.0.0.1 at 2014-01-25 11:30:00 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6Imx7OGTklSxUum6XVntnE9QsSDc14295D03YWwU9qo=", "user"=>{"username"=>"dsag", "email"=>"asdfafds@example.com", "responses_attributes"=>{"0"=>{"content"=>"gadsdsfa"}, "1"=>{"content"=>""}, "2"=>{"content"=>""}}}, "commit"=>"Submit"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('asdfafds@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered shared/_error_messages.html (2.7ms)
+  Rendered users/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 34ms (Views: 17.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/response.css?body=1" for 127.0.0.1 at 2014-01-25 11:30:00 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-25 11:30:00 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-25 11:30:00 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-01-25 11:30:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-25 11:30:01 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-25 11:30:01 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-25 11:30:01 -0500
+
+
+Started GET "/assets/response.js?body=1" for 127.0.0.1 at 2014-01-25 11:30:01 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-01-25 11:30:01 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-25 11:30:01 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-25 11:30:01 -0500
+
+
+Started POST "/users" for 127.0.0.1 at 2014-01-25 11:30:07 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6Imx7OGTklSxUum6XVntnE9QsSDc14295D03YWwU9qo=", "user"=>{"username"=>"dsag", "email"=>"asdfafds@example.com", "responses_attributes"=>{"0"=>{"content"=>"gadsdsfa"}, "1"=>{"content"=>"sadgasdf"}, "2"=>{"content"=>"gsafdsafdfs"}}}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('asdfafds@example.com') LIMIT 1[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "users" ("created_at", "email", "updated_at", "username") VALUES (?, ?, ?, ?)  [["created_at", Sat, 25 Jan 2014 16:30:07 UTC +00:00], ["email", "asdfafds@example.com"], ["updated_at", Sat, 25 Jan 2014 16:30:07 UTC +00:00], ["username", "dsag"]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "responses" ("content", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["content", "gadsdsfa"], ["created_at", Sat, 25 Jan 2014 16:30:07 UTC +00:00], ["updated_at", Sat, 25 Jan 2014 16:30:07 UTC +00:00], ["user_id", 22]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "responses" ("content", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["content", "sadgasdf"], ["created_at", Sat, 25 Jan 2014 16:30:07 UTC +00:00], ["updated_at", Sat, 25 Jan 2014 16:30:07 UTC +00:00], ["user_id", 22]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "responses" ("content", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["content", "gsafdsafdfs"], ["created_at", Sat, 25 Jan 2014 16:30:07 UTC +00:00], ["updated_at", Sat, 25 Jan 2014 16:30:07 UTC +00:00], ["user_id", 22]]
+  [1m[35m (4.8ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/users/22
+Completed 302 Found in 23ms (ActiveRecord: 8.1ms)
+
+
+Started GET "/users/22" for 127.0.0.1 at 2014-01-25 11:30:07 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "22"]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "responses" WHERE "responses"."user_id" = ?  [["user_id", 22]]
+  [1m[36mResponse Load (0.3ms)[0m  [1mSELECT "responses".* FROM "responses" WHERE "responses"."user_id" = ?[0m  [["user_id", 22]]
+  Rendered users/show.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `content' for nil:NilClass):
+    4: 
+    5: <%= @responses.each do |response| %>
+    6:     response:
+    7:     <%= @response.content %>
+    8: 
+    9: <% end %>
+  app/views/users/show.html.erb:7:in `block in _app_views_users_show_html_erb__1321203998249378510_2176862760'
+  app/views/users/show.html.erb:5:in `_app_views_users_show_html_erb__1321203998249378510_2176862760'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (40.9ms)
+
+
+Started GET "/users/22" for 127.0.0.1 at 2014-01-25 11:30:38 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "22"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "responses" WHERE "responses"."user_id" = ?[0m  [["user_id", 22]]
+  [1m[35mResponse Load (0.1ms)[0m  SELECT "responses".* FROM "responses" WHERE "responses"."user_id" = ?  [["user_id", 22]]
+  Rendered users/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 17ms (Views: 13.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-25 11:30:38 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-25 11:30:38 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-01-25 11:30:38 -0500
+
+
+Started GET "/assets/response.css?body=1" for 127.0.0.1 at 2014-01-25 11:30:38 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-25 11:30:38 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-25 11:30:38 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-25 11:30:38 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-25 11:30:38 -0500
+
+
+Started GET "/assets/response.js?body=1" for 127.0.0.1 at 2014-01-25 11:30:38 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-25 11:30:38 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-01-25 11:30:38 -0500
+  [1m[36m (18.0ms)[0m  [1mCREATE TABLE "responses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (84.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (77.3ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (54.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (21.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.5ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (19.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140125003018')[0m
+  [1m[35m (23.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140125001946')
+  [1m[36m (18.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140125002132')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/users/22" for 127.0.0.1 at 2014-01-25 11:32:11 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "22"]]
+Completed 404 Not Found in 10ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=22):
+  app/controllers/users_controller.rb:18:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (34.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-25 11:32:13 -0500
+
+
+Started GET "/assets/response.css?body=1" for 127.0.0.1 at 2014-01-25 11:32:13 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-25 11:32:13 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-01-25 11:32:13 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-25 11:32:13 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-25 11:32:13 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-25 11:32:13 -0500
+
+
+Started GET "/assets/response.js?body=1" for 127.0.0.1 at 2014-01-25 11:32:13 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-25 11:32:13 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-01-25 11:32:13 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-25 11:32:13 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-25 11:32:15 -0500
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html (0.1ms)
+  Rendered users/new.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 37ms (Views: 22.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-25 11:32:15 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-01-25 11:32:15 -0500
+
+
+Started GET "/assets/response.css?body=1" for 127.0.0.1 at 2014-01-25 11:32:15 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-25 11:32:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-25 11:32:15 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-25 11:32:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-25 11:32:15 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-25 11:32:15 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-01-25 11:32:15 -0500
+
+
+Started GET "/assets/response.js?body=1" for 127.0.0.1 at 2014-01-25 11:32:15 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-25 11:32:15 -0500
+
+
+Started POST "/users" for 127.0.0.1 at 2014-01-25 11:32:25 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6Imx7OGTklSxUum6XVntnE9QsSDc14295D03YWwU9qo=", "user"=>{"username"=>"Rita", "email"=>"rita@example.com", "responses_attributes"=>{"0"=>{"content"=>"Yay"}, "1"=>{"content"=>"here"}, "2"=>{"content"=>"I am"}}}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('rita@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("created_at", "email", "updated_at", "username") VALUES (?, ?, ?, ?)  [["created_at", Sat, 25 Jan 2014 16:32:25 UTC +00:00], ["email", "rita@example.com"], ["updated_at", Sat, 25 Jan 2014 16:32:25 UTC +00:00], ["username", "Rita"]]
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "responses" ("content", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["content", "Yay"], ["created_at", Sat, 25 Jan 2014 16:32:25 UTC +00:00], ["updated_at", Sat, 25 Jan 2014 16:32:25 UTC +00:00], ["user_id", 1]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "responses" ("content", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["content", "here"], ["created_at", Sat, 25 Jan 2014 16:32:25 UTC +00:00], ["updated_at", Sat, 25 Jan 2014 16:32:25 UTC +00:00], ["user_id", 1]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "responses" ("content", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["content", "I am"], ["created_at", Sat, 25 Jan 2014 16:32:25 UTC +00:00], ["updated_at", Sat, 25 Jan 2014 16:32:25 UTC +00:00], ["user_id", 1]]
+  [1m[35m (5.0ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/users/1
+Completed 302 Found in 24ms (ActiveRecord: 7.3ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-01-25 11:32:25 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "responses" WHERE "responses"."user_id" = ?  [["user_id", 1]]
+  [1m[36mResponse Load (0.2ms)[0m  [1mSELECT "responses".* FROM "responses" WHERE "responses"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 16ms (Views: 12.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-25 11:32:25 -0500
+
+
+Started GET "/assets/response.css?body=1" for 127.0.0.1 at 2014-01-25 11:32:26 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-01-25 11:32:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-25 11:32:26 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-25 11:32:26 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-01-25 11:32:26 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-25 11:32:26 -0500
+
+
+Started GET "/assets/response.js?body=1" for 127.0.0.1 at 2014-01-25 11:32:26 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-25 11:32:26 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-25 11:32:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-25 11:32:26 -0500
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-01-25 11:33:11 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "responses" WHERE "responses"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mResponse Load (0.1ms)[0m  SELECT "responses".* FROM "responses" WHERE "responses"."user_id" = ?  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 42ms (Views: 38.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-25 11:33:12 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-25 11:33:12 -0500
+
+
+Started GET "/assets/response.css?body=1" for 127.0.0.1 at 2014-01-25 11:33:12 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-25 11:33:12 -0500
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-01-25 11:33:12 -0500
+
+
+Started GET "/assets/response.js?body=1" for 127.0.0.1 at 2014-01-25 11:33:12 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-25 11:33:12 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-01-25 11:33:12 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-25 11:33:12 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-25 11:33:12 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-25 11:33:12 -0500
