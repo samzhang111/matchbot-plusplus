@@ -3,7 +3,7 @@
 <p><%= @responses.count %> responses</p>
 
 <ul>
-<%= @responses.each do |response| %>
+<% @responses.each do |response| %>
     <li>
     <%= response.content %>
     </li>

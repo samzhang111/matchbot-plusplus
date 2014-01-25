@@ -8136,3 +8136,85 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-25 11:45:19 -0500
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-25 11:45:20 -0500
+
+
+Started GET "/users/" for 127.0.0.1 at 2014-01-25 12:10:00 -0500
+
+SyntaxError (/Users/ritazevallos/Projects/matchbot/app/helpers/application_helper.rb:6: syntax error, unexpected $end, expecting keyword_end):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/users_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (37.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (95.5ms)
+
+
+Started GET "/users/" for 127.0.0.1 at 2014-01-25 12:10:08 -0500
+
+SyntaxError (/Users/ritazevallos/Projects/matchbot/app/helpers/application_helper.rb:6: syntax error, unexpected $end, expecting keyword_end):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/users_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (20.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (68.3ms)
+
+
+Started GET "/users/" for 127.0.0.1 at 2014-01-25 12:10:10 -0500
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mResponse Load (0.5ms)[0m  [1mSELECT "responses".* FROM "responses" WHERE "responses"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered users/index.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 67ms (Views: 56.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-01-25 12:10:10 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-25 12:10:10 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-01-25 12:10:10 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-25 12:10:10 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-25 12:10:10 -0500
+
+
+Started GET "/assets/response.css?body=1" for 127.0.0.1 at 2014-01-25 12:10:10 -0500
+
+
+Started GET "/assets/response.js?body=1" for 127.0.0.1 at 2014-01-25 12:10:10 -0500
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-01-25 12:10:10 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-01-25 12:10:10 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-25 12:10:10 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-25 12:10:10 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddBotPromptAndConvoIdToResponses (20140125172147)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (12.8ms)[0m  [1mALTER TABLE "responses" ADD "bot_prompt" varchar(255)[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "responses" ADD "convo_id" integer
+  [1m[36mSQL (2.7ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140125172147"]]
+  [1m[35m (4.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateConversations (20140125172434)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.4ms)[0m  [1mCREATE TABLE "conversations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "avg_length" float, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (4.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140125172434"]]
+  [1m[36m (16.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
