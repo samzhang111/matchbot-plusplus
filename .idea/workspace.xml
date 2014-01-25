@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b3f24e0-640d-46ff-afe1-8de7090288af" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend_Files/html/scripts/chatwindow.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Frontend_Files/html/scripts/contactscript.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Frontend_Files/html/scripts/aboutscript.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/aboutscript.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Frontend_Files/html/scripts/indexscript.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/indexscript.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Frontend_Files/html/scripts/matchscript.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/matchscript.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frontend_Files/html/about.html" afterPath="$PROJECT_DIR$/Frontend_Files/html/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/chatwindow.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/chatwindow.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/contactscript.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/contactscript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frontend_Files/html/contact.html" afterPath="$PROJECT_DIR$/Frontend_Files/html/contact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frontend_Files/html/index.html" afterPath="$PROJECT_DIR$/Frontend_Files/html/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frontend_Files/html/matches.html" afterPath="$PROJECT_DIR$/Frontend_Files/html/matches.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <ignored path="matchbot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,7 +18,7 @@
     <file path="/home.html.erb" changelist="4b3f24e0-640d-46ff-afe1-8de7090288af" time="1390685337575" ignored="false" />
     <file path="/response.rb" changelist="4b3f24e0-640d-46ff-afe1-8de7090288af" time="1390667516511" ignored="false" />
     <file path="/user.rb" changelist="4b3f24e0-640d-46ff-afe1-8de7090288af" time="1390665798048" ignored="false" />
-    <file path="/routes.rb" changelist="4b3f24e0-640d-46ff-afe1-8de7090288af" time="1390672304935" ignored="false" />
+    <file path="/routes.rb" changelist="4b3f24e0-640d-46ff-afe1-8de7090288af" time="1390686264564" ignored="false" />
     <file path="/users_controller.rb" changelist="4b3f24e0-640d-46ff-afe1-8de7090288af" time="1390667320722" ignored="false" />
     <file path="/new.html.erb" changelist="4b3f24e0-640d-46ff-afe1-8de7090288af" time="1390673778032" ignored="false" />
     <file path="/show.html.erb" changelist="4b3f24e0-640d-46ff-afe1-8de7090288af" time="1390667590936" ignored="false" />
@@ -33,6 +29,7 @@
     <file path="/development.rb" changelist="4b3f24e0-640d-46ff-afe1-8de7090288af" time="1390684226853" ignored="false" />
     <file path="/application.rb" changelist="4b3f24e0-640d-46ff-afe1-8de7090288af" time="1390684139794" ignored="false" />
     <file path="/about.html.erb" changelist="4b3f24e0-640d-46ff-afe1-8de7090288af" time="1390685214167" ignored="false" />
+    <file path="/application.html.erb" changelist="4b3f24e0-640d-46ff-afe1-8de7090288af" time="1390686197783" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,37 +54,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="16" selection-start="345" selection-end="345" vertical-scroll-proportion="-9.375">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="114" selection-start="265" selection-end="265" vertical-scroll-proportion="-5.625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="about.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/static_pages/about.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="25" selection-start="151" selection-end="151" vertical-scroll-proportion="-3.75">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contact.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/static_pages/contact.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="116" selection-start="376" selection-end="376" vertical-scroll-proportion="0.36585367">
+            <state line="12" column="117" selection-start="328" selection-end="328" vertical-scroll-proportion="0.32085562">
               <folding />
             </state>
           </provider>
@@ -112,7 +82,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/users/new.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/indexscript.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/matchscript.js" />
@@ -120,13 +89,14 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/chatwindow.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/views/static_pages/about.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/contact.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/matches.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/static_pages/about.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
       </list>
     </option>
   </component>
@@ -138,8 +108,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="66" />
-    <option name="y" value="354" />
+    <option name="x" value="31" />
+    <option name="y" value="89" />
     <option name="width" value="1244" />
     <option name="height" value="723" />
   </component>
@@ -731,7 +701,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="66" y="354" width="1244" height="723" extended-state="0" />
+    <frame x="31" y="89" width="1244" height="723" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -882,35 +852,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static_pages/matches.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="654" selection-end="654" vertical-scroll-proportion="0.7567568">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="16" selection-start="345" selection-end="345" vertical-scroll-proportion="-9.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="114" selection-start="265" selection-end="265" vertical-scroll-proportion="-5.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_pages/about.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="25" selection-start="151" selection-end="151" vertical-scroll-proportion="-3.75">
+        <state line="30" column="14" selection-start="541" selection-end="541" vertical-scroll-proportion="0.81669694">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static_pages/contact.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="116" selection-start="376" selection-end="376" vertical-scroll-proportion="0.36585367">
+        <state line="2" column="0" selection-start="8" selection-end="8" vertical-scroll-proportion="0.054446463">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="87" selection-start="757" selection-end="757" vertical-scroll-proportion="0.47658864">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="237" selection-end="237" vertical-scroll-proportion="0.26132405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_pages/about.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="251" selection-end="251" vertical-scroll-proportion="0.28745645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="117" selection-start="328" selection-end="328" vertical-scroll-proportion="0.32085562">
           <folding />
         </state>
       </provider>
