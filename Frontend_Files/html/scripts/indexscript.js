@@ -13,8 +13,8 @@ $(document).ready(function() {
     
     $("#userinput").keypress(function(e) {
         if (e.which == 13) {
+            var uIn = $('input[name=inputtext]').val();
             if (!(chatwindow.currenttype == "last")) {
-                var uIn = $('input[name=inputtext]').val();
                 chatwindow.userSays(uIn);
                 chatwindow.getBot({
                     msg: uIn,
