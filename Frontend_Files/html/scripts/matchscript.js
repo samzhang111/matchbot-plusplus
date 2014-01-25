@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	// Get matches
 	var matchtext = [[.75, "Franzen", "Whut", "YOLO"], 
-					[.60, "Adrian", "You're a poet", "No, I'm a physicist", "srsly lol.", "stfu noob. physicists are clutch"],
+					[.60, "Adrian", "You're a poet", "No, I'm a physicist.", "srsly lol.", "stfu noob, physicists are clutch."],
 					[.40, "Sam", "How's life?", "Haha, you're funny."]];
 	
 	var addMatches = function() {
@@ -12,7 +12,8 @@ $(document).ready(function() {
 			//console.log(matchtext[i][0]);
 			var per = matchtext[i][0]*100+'%';
 			$(item + (i+1) + ") div:first-child() div").append(per);
-			$(item + (i+1) + ") div:first-child() div").width(per);
+			//$(item + (i+1) + ") div:first-child() div").width(per);
+			$(item + (i+1) + ") div:first-child() div").animate({width: per}, "slow");
 			
 			var convoLen = matchtext[i].length-2;
 			for (var j=0; j<convoLen; j++) {
@@ -24,7 +25,6 @@ $(document).ready(function() {
 					speaker = "<span>" + matchtext[i][1] + "</span>";
 				}
 				$(item + (i+1) + ") div:nth-child(2)").append(speaker + ": "+ matchtext[i][j+2] + "<br>");
-				console.log(matchtext[i][j+2]);
 			    
 			}
 

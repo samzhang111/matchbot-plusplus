@@ -9,13 +9,14 @@ var allresponses = [];
 $(document).ready(function() {
 
     // Message handlers
-    $(".chatwindow").append("<span> MatchBot: </span> Tell me about yourself! <br>");
+    chatwindow.botSays("Tell me about yourself!");
     
     $("#userinput").keypress(function(e) {
         if(e.which == 13) {
-            var toAdd = $('input[name=inputtext]').val();
-            chatwindow.appendWindow(toAdd);
-            chatwindow.calculate(toAdd);
+            var uIn = $('input[name=inputtext]').val();
+            chatwindow.userSays(uIn);
+            chatwindow.getBot(uIn);
+            chatwindow.calculate(uIn);
         }
     });
 });

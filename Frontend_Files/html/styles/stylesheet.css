@@ -1,6 +1,6 @@
 body {
 	text-align: center;
-	background-color: #8ab6c7;
+	background-image: url('../images/squared_metal.png');
 }
 
 input {
@@ -21,6 +21,13 @@ p {
 
 #logo {
 	width: 30%;
+	margin-top: 10px;
+}
+
+#meet {
+	width: 50%;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .chatwindow {
@@ -52,7 +59,7 @@ input {
 	width: 90%;
 	margin: 0 auto;
 	table-layout: fixed;
-	background-color: white;
+	border-spacing: 1.5em;
 
 }
 
@@ -67,7 +74,7 @@ input {
 	font-size: .9em;
 	color: white;
 	font-family: calibri, serif;
-	border: 1px solid grey;
+	border: 1px solid white;
 	text-align: left;
 
 	
@@ -77,11 +84,14 @@ input {
 	font-family: calibri, serif;
 	width: 85%;
 	text-align: left;
-	margin-left: 15%;
+	margin-left: 10%;
 	line-height: 1.5;
+	margin-top: 5px;
 }
 
 .matches td {
-	padding: 2%;
+	padding: 1.5%;
 	vertical-align: top;
+	border: 4px solid #3780cf;
+	background-color: #68a4e7;
 }
