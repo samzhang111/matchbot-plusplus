@@ -2,22 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b3f24e0-640d-46ff-afe1-8de7090288af" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/about.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/about.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frontend_Files/html/about.html" afterPath="$PROJECT_DIR$/Frontend_Files/html/about.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/chatwindow.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/chatwindow.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frontend_Files/html/contact.html" afterPath="$PROJECT_DIR$/Frontend_Files/html/contact.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/contactscript.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/contactscript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frontend_Files/html/index.html" afterPath="$PROJECT_DIR$/Frontend_Files/html/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/indexscript.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/indexscript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/matches.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/matches.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/matchscript.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/matchscript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frontend_Files/html/matches.html" afterPath="$PROJECT_DIR$/Frontend_Files/html/matches.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <ignored path="matchbot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +18,7 @@
     <file path="/home.html.erb" changelist="4b3f24e0-640d-46ff-afe1-8de7090288af" time="1390685337575" ignored="false" />
     <file path="/response.rb" changelist="4b3f24e0-640d-46ff-afe1-8de7090288af" time="1390667516511" ignored="false" />
     <file path="/user.rb" changelist="4b3f24e0-640d-46ff-afe1-8de7090288af" time="1390665798048" ignored="false" />
-    <file path="/routes.rb" changelist="4b3f24e0-640d-46ff-afe1-8de7090288af" time="1390672304935" ignored="false" />
+    <file path="/routes.rb" changelist="4b3f24e0-640d-46ff-afe1-8de7090288af" time="1390686264564" ignored="false" />
     <file path="/users_controller.rb" changelist="4b3f24e0-640d-46ff-afe1-8de7090288af" time="1390667320722" ignored="false" />
     <file path="/new.html.erb" changelist="4b3f24e0-640d-46ff-afe1-8de7090288af" time="1390673778032" ignored="false" />
     <file path="/show.html.erb" changelist="4b3f24e0-640d-46ff-afe1-8de7090288af" time="1390667590936" ignored="false" />
@@ -39,6 +29,7 @@
     <file path="/development.rb" changelist="4b3f24e0-640d-46ff-afe1-8de7090288af" time="1390684226853" ignored="false" />
     <file path="/application.rb" changelist="4b3f24e0-640d-46ff-afe1-8de7090288af" time="1390684139794" ignored="false" />
     <file path="/about.html.erb" changelist="4b3f24e0-640d-46ff-afe1-8de7090288af" time="1390685214167" ignored="false" />
+    <file path="/application.html.erb" changelist="4b3f24e0-640d-46ff-afe1-8de7090288af" time="1390686197783" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +57,7 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="115" selection-start="22" selection-end="22" vertical-scroll-proportion="0.03816794">
+            <state line="12" column="117" selection-start="328" selection-end="328" vertical-scroll-proportion="0.32085562">
               <folding />
             </state>
           </provider>
@@ -91,7 +82,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/users/new.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/indexscript.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/matchscript.js" />
@@ -99,13 +89,14 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/chatwindow.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/views/static_pages/about.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/contact.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/matches.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/static_pages/about.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
       </list>
     </option>
   </component>
@@ -117,8 +108,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="66" />
-    <option name="y" value="62" />
+    <option name="x" value="31" />
+    <option name="y" value="89" />
     <option name="width" value="1244" />
     <option name="height" value="723" />
   </component>
@@ -219,28 +210,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="styles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="matchbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="matchbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Frontend_Files" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -525,6 +494,11 @@
     <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/assets/javascripts" />
+    </key>
+  </component>
   <component name="RunManager" selected="Rails.Development: matchbot">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
       <module name="" />
@@ -727,23 +701,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="66" y="62" width="1244" height="723" extended-state="0" />
+    <frame x="31" y="89" width="1244" height="723" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.004173623" sideWeight="0.7092652" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26711187" sideWeight="0.71086264" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26711187" sideWeight="0.6709265" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2891374" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2891374" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -818,39 +792,16 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Frontend_Files/html/scripts/chatwindow.js">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/chatwindow.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="41" selection-start="90" selection-end="90" vertical-scroll-proportion="0.15748031">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend_Files/html/scripts/matchscript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="58" selection-start="0" selection-end="1180" vertical-scroll-proportion="0.5940594">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/indexscript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="3" selection-start="621" selection-end="621" vertical-scroll-proportion="0.7553957">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/matchscript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="3" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.8094059">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/contactscript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="116" selection-start="418" selection-end="418" vertical-scroll-proportion="0.66831684">
+        <state line="16" column="58" selection-start="0" selection-end="1180" vertical-scroll-proportion="0.5940594">
           <folding />
         </state>
       </provider>
@@ -865,20 +816,6 @@
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="116" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_pages/contact.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="376" selection-end="376" vertical-scroll-proportion="-8.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_pages/about.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="7" selection-start="418" selection-end="418" vertical-scroll-proportion="0.6081081">
           <folding />
         </state>
       </provider>
@@ -915,21 +852,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static_pages/matches.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="654" selection-end="654" vertical-scroll-proportion="0.7567568">
+        <state line="30" column="14" selection-start="541" selection-end="541" vertical-scroll-proportion="0.81669694">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_pages/contact.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="8" selection-end="8" vertical-scroll-proportion="0.054446463">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="87" selection-start="757" selection-end="757" vertical-scroll-proportion="0.47658864">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="114" selection-start="265" selection-end="265" vertical-scroll-proportion="0.35526314">
+        <state line="10" column="0" selection-start="237" selection-end="237" vertical-scroll-proportion="0.26132405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_pages/about.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="251" selection-end="251" vertical-scroll-proportion="0.28745645">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="115" selection-start="22" selection-end="22" vertical-scroll-proportion="0.03816794">
+        <state line="12" column="117" selection-start="328" selection-end="328" vertical-scroll-proportion="0.32085562">
           <folding />
         </state>
       </provider>

@@ -3,10 +3,10 @@ var chatwindow = {
         frequencies: {},
         avg_length: 0
     },
-
+    
     allresponses: [],
 
-    currenttype: "",
+    currenttype: "first",
 
     userSays: function(userinput) {
         $(".chatwindow").append("<span>You: </span>" + userinput + "<br>");
@@ -20,12 +20,19 @@ var chatwindow = {
         $('input[name=inputtext]').val('');
     },
 
+    send_and_get_line: function(userinputobj) {
+        //send line of conversation, get response
+        response = $.get("/bot", JSON.stringify(userinputobj));
+        return response;
+    },
+
     getBot: function(userinput) {
-        // gives bot userinput
-        this.allresponses.push(userinput);
+        
         // gets bot's response
-        var botresponse = "Okay.";
-        this.botSays(botresponse);
+        //var botresponse = this.send_and_get_line(userinput);
+        var botresponse = {msg: "temporary placeholder", cat: "msg"}
+        currentype = botresponse.cat
+        this.botSays(botresponse.msg);
     },
     calculate: function(userinput, whatthebotsaid) {
         // update statistics
@@ -53,16 +60,6 @@ var chatwindow = {
         // punctuation per 
     },
 
-    send_and_get_line: function(userinputobj) {
-        //send line of conversation, get response
-        userinputobj = {
-            msg: "hello, this is a test message from the user.",
-            type: "msg",
-        };
-        response = $.get("/bot", JSON.stringify(userinputobj));
-        return response;
-    },
-
     send_data: function() {
         //send statistics to rails
         $.ajax({
@@ -78,7 +75,7 @@ var chatwindow = {
     },
 
     end_seq: function() {
-        botSays("Great! Email?");
+        this.botSays("Wow, thanks for sticking to the end. One last thing - we need your e-mail so that future matches can contact you. What's your e-mail?");
         var validemail = false;
         while (!validemail) {
             $("#userinput").keypress(function(e) {
@@ -96,7 +93,9 @@ var chatwindow = {
             });
 
         }
-    }
+        
+        //reroute to matches
+    },
 };
 
 function isEmail(input) {
