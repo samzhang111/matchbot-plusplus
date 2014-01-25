@@ -10,7 +10,7 @@
     <%= f.text_field :email %>
     <p>
     <%= f.fields_for :responses do |builder| %>
-          <%= builder.label :content, "Response" %>
+          <%= builder.label :content %>
           <%= builder.text_field :content %>
     <% end %>
     </p>
