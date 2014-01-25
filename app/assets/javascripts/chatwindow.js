@@ -53,7 +53,9 @@ var chatwindow = {
             dataType: "json",
             failure: function(errMsg) {
                 alert("Connection Error: Chat data not sent");
-            }  
-        });
+            }
+
     }
+)
+}
 };

@@ -1,5 +1,6 @@
 $(document).ready(function() {
-	
+
+
     // Message handlers
     $(".chatwindow").append("<span> MatchBot: </span> What can I help you with? <br>");
 
