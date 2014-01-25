@@ -1,8 +1,20 @@
 $(document).ready(function() {
 	// Get matches
-	var matchtext = [[.75, "Franzen", "Whut", "YOLO"], 
-					[.60, "Adrian", "You're a poet", "No, I'm a physicist.", "srsly lol.", "stfu noob, physicists are clutch."],
-					[.40, "Sam", "How's life?", "Haha, you're funny."]];
+	var matchtext = {
+		Franzen: {
+			score: .75,
+			msg: ["WHADDUP", "YOLO"],
+		}
+		Adrian: {
+			score: .60,
+			msg: ["You're a poet", "No, I'm a physicist.", "srsly lol.", "stfu noob, physicists are clutch."]
+		}
+		Sam: {
+			score: .40,
+			msg: "How's life?", "Haha, you're funny."
+		}
+
+	}
 	
 	var addMatches = function() {
 		for (var i=0; i<3; i++) {
