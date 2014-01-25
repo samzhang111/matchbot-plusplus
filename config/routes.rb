@@ -2,7 +2,7 @@ Matchbot::Application.routes.draw do
   get "response/create"
   get "response/destroy"
   resources :users
-  root 'users#new'
+  root 'static_pages#home'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
