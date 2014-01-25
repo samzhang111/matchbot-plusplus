@@ -1,6 +1,7 @@
 var chatwindow = {
     statistics: {
         frequencies: {},
+        nonstoplist_freq: {},
         avg_length: 0
     },
     
@@ -40,62 +41,62 @@ var chatwindow = {
 
         var words = userinput.split(" ");
         words.forEach(function(word) {
-            if (word in chatwindow) {
-                chatwindow[word] += 1;
-            }
-            else if (! word in whatthebotsaid) {
-                chatwindow[word] = 1;
-            }
-        })
-        return userinput;
+            if(! word in whatthebotsaid) {
+                if (word in statistics.frequencies) {
+                    statics.frequencies[word] += 1;
+                }
+                else {
+                    statistics.frequencies[word] = 1;
+                }
+                if (!word in stoplist) {
+                    if (word in statistics.nonstoplist_freq) {
+                        statistics.nonstoplist_freq[word] += 1;
+                    }
+                    else {
+                        statistics.nonstoplist_freq[word] = 1;
+                    }
+                }
+             }
+        };
     },
     final_calculations: function() {
         // called right before sending, to calculate avg line lengths
         var total = 0.0;
-        allresponses.forEach(function (response) {
+        chatwindow.allresponses.forEach(function (response) {
             total += response.length;
         });
-        statistics.avg_length = total/response.length;
+        chatwindow.statistics.avg_length = total/chatwindow.allresponses.length;
 
         // punctuation per 
     },
 
     send_data: function() {
         //send statistics to rails
+        /*
         $.ajax({
             type: "POST",
             url: "/AcceptConvo",
-            data: JSON.stringify(statistics),
+            data: JSON.stringify(chatwindow.statistics),
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             failure: function(errMsg) {
                 alert("Connection Error: Chat data not sent");
             }
         });
+        */
+        console.log("in send_data");
     },
+
+    /*get_email: function() {
+        $user
+    },*/
 
     end_seq: function() {
-        this.botSays("Wow, thanks for sticking to the end. One last thing - we need your e-mail so that future matches can contact you. What's your e-mail?");
-        var validemail = false;
-        while (!validemail) {
-            $("#userinput").keypress(function(e) {
-                var uIn;
-                if(e.which == 13) {
-                    uIn = $('input[name=inputtext]').val();
-                }
-                appendWindow(uIn);
-                if (isEmail(uIn)) {
-                    validemail = true;
-                }
-                else {
-                    manualtext("Oh no! Not an e-mail! Try again?");
-                }
-            });
-
-        }
-        
-        //reroute to matches
-    },
+        chatwindow.final_calculations();
+        chatwindow.send_data();
+        alert("Sweet. Now rerouting you to your matches!");
+        window.location.replace("matches.html");
+    },        
 };
 
 function isEmail(input) {
