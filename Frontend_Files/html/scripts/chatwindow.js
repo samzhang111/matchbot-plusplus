@@ -57,8 +57,9 @@ var chatwindow = {
                     }
                 }
              }
-        };
+        })
     },
+    
     final_calculations: function() {
         // called right before sending, to calculate avg line lengths
         var total = 0.0;
@@ -86,10 +87,6 @@ var chatwindow = {
         */
         console.log("in send_data");
     },
-
-    /*get_email: function() {
-        $user
-    },*/
 
     end_seq: function() {
         chatwindow.final_calculations();
