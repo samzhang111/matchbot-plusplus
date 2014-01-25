@@ -70,28 +70,29 @@ i = 2
 
 class Calculator(dbus.service.Object):
   def __init__(self):
-    self.i = 2;
+    self.sessions = dict();
     busName = dbus.service.BusName('com.chatbot.Chatbot', bus = dbus.SessionBus())
     dbus.service.Object.__init__(self, busName, '/Chatbot')
  
-  @dbus.service.method('org.documentroot.Chatbot', in_signature = 's', out_signature = 's')
-  def chat(self, a): 
-    self.i += 1
-    i= self.i
-    i+=1
+  @dbus.service.method('org.documentroot.Chatbot', in_signature = 'sx', out_signature = 's')
+  def chat(self, a, session_id):
+    if session_id not in self.sessions:
+      self.sessions[session_id] =[2,[]]
+    self.sessions[session_id][0] += 1
+    i = self.sessions[session_id][0]
     if (i%5 == 0):
         return(questions[i/5])
     elif (i%5 == 1):
-       answers.append(a)
+       self.sessions[session_id][1].append(a)
     return kern.respond(a)
   
-  @dbus.service.method('org.documentroot.Calculator', in_signature = 's', out_signature = 's')
-  def get_answers(self, n):
+  @dbus.service.method('org.documentroot.Calculator', in_signature = 'x', out_signature = 's')
+  def get_answers(self, session_id):
     retval = ""
-    for item in answers:
+    for item in self.sessions[session_id][1]:
       retval += item
       retval += "|"
-    retval.strip("|")
+    retval.rstrip("|")
     return retval
   """
   @dbus.service.method('org.documentroot.Calculator', in_signature = 'd', out_signature = 'd')
