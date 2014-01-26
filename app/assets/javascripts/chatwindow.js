@@ -12,14 +12,15 @@ var chatwindow = {
     CONVO_LIMIT: 10,
     currenttype: "first",
 
-    populate_forms: function() {
+    send_data: function() {
         // populate a hidden form
-        $("input[name=user[email]]").val(chatwindow.email);
-        $("input[name=user[avg_length]]").val(chatwindow.statistics.avg_length);
-        $("input[name=user[frequencies]]").val(JSON.stringify(chatwindow.statistics.frequencies));
-        $("input[name=user[nonstoplist_freq]]").val(JSON.stringify(chatwindow.statistics.nonstoplist_freq));
-        $("input[name=user[total_words]]").val(chatwindow.statistics.total_words);
-        
+        $("#user_email").val(chatwindow.email);
+        $("#user_avg_length").val(chatwindow.statistics.avg_length);
+        $("#user_frequencies").val(JSON.stringify(chatwindow.statistics.frequencies));
+        $("#user_nonstoplist_freq").val(JSON.stringify(chatwindow.statistics.nonstoplist_freq));
+        $("#user_total_words").val(chatwindow.statistics.total_words);
+        $("#user_submit").submit();
+        //send data
     },
 
     sayNoScroll: function(user, userinput) {
@@ -48,12 +49,6 @@ var chatwindow = {
             currentype = "msg";
             chatwindow.botSays(data.slice(2,-2));
         });
-    },
-
-    send_and_get_line: function(userinputobj) {
-        //send line of conversation, get response
-        response = $.get("/bot", JSON.stringify(userinputobj));
-        return response;
     },
 
     getBot: function(userinput) {
@@ -100,7 +95,7 @@ var chatwindow = {
     end_seq: function() {
         chatwindow.final_calculations();
         chatwindow.send_data();
-        alert("Sweet. Now rerouting you to your matches!");
+        chatwindow.botSays("Great. Rerouting you to your matches!");
         //window.location.replace("matches.html");
     },        
 };
