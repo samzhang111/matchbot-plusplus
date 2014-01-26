@@ -1,8 +1,6 @@
 class UsersController < ApplicationController
   def new
     @user = User.new
-    3.times{@user.responses.build}
-    @responses = @user.responses
   end
 
   def create
@@ -16,7 +14,6 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    @responses = @user.responses
   end
 
   def index
@@ -26,6 +23,6 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:username, :email, responses_attributes: [:content])
+    params.require(:user).permit(:email, :freqs, :nonstoplist_freqs, :avg_length, :total_words)
   end
 end
