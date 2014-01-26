@@ -1,40 +1,13 @@
 <!--taking the html from the match page-->
 
-<%= @matches.count %>
-
-<% @matches.each do |match| %>
-<p>
-    <div>user_id: <%= match[0] %></div>
-    <div>likeness: <%= match[1] %></div>
-    <div>email: <%= match[2] %></div>
-    <div>message: <%= match[3] %></div>
-</p>
-<% end %>
+<%= javascript_include_tag "matchscript.js" %>
 
 <div>
   <table class="matches">
     <tr>
-      <td>
-        <div class="email"></div>
-        <div class="bar">
-          <div class="percentage"></div>
-        </div>
-        <div class="snippet"></div>
-      </td>
-      <td>
-        <div class="email"></div>
-        <div class="bar">
-          <div class="percentage"></div>
-        </div>
-        <div class="snippet"></div>
-      </td>
-      <td>
-        <div class="email"></div>
-        <div class="bar">
-          <div class="percentage"></div>
-        </div>
-        <div class="snippet"></div>
-      </td>
+      <% @matches.each do |match| %>
+        <%= render 'match', match: match %>
+      <% end %>
     </tr>
   </table>
 </div>

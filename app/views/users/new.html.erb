@@ -1,13 +1,18 @@
-<%= javascript_include_tag "indexscript" %>
-<%= javascript_include_tag "chatwindow" %>
+<%= javascript_include_tag "indexscript.js" %>
+<%= javascript_include_tag "chatwindow.js" %>
+
 <div>
-  <p>Talk to our MatchBot to meet your match!</p>
+  <p>Talk to our MatchBot to meet your match! It takes the average user five minutes to complete.</p>
   <div>
     <div class="chatwindow">
+      <table class='prompt'>
+        <tr>
+          <td width="70px"><span>You &gt;&gt;  </span></td>
+          <td><input id="userinput" name='inputtext' placeholder='Type here'/></td>
+        </tr>
+      </table>
     </div>
-    <div id="userinput">
-      <input name="inputtext" placeholder="Press enter to send"/>
-    </div>
+
 
     <!--hidden form -->
 

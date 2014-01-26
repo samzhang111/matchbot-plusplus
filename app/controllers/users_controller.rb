@@ -36,16 +36,17 @@ class UsersController < ApplicationController
     @users.each do |u|
       likeness = similarity(user,u)   # returns float in [0,1]
       snippet = "default snippet"
+      email = (u.email).split('@')[0]
 
       if matches.size > 3
         3.times { |i|
           if matches[i][1] < likeness
-            matches[i]=[u.id, likeness, u.email, snippet]
+            matches[i]=[u.id, likeness*100, email, snippet]
             break
           end
         }
       elsif matches.size < 3
-        matches.append([u.id, likeness,u.email,snippet])
+        matches.append([u.id, likeness*100,email,snippet])
       end
     end
   
