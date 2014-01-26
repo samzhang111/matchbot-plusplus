@@ -3,10 +3,6 @@ body {
 	background-image: url('../images/squared_metal.png');
 }
 
-input {
-	width: 50%;
-}
-
 span { /*for username display*/
 	font-weight: bold;
 }
@@ -22,28 +18,10 @@ input {
 	padding: 5px 5px 5px 5px;
 }
 
-#logo {
-	width: 30%;
-	margin-top: 10px;
-}
-
-#meet {
-	width: 50%;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-#diag {
-	width: 30%;
-	margin-top: 10px;
-	background-color: rgba(255,255,255,0.6);
-	
-}
-
-#face {
-	width:60%;
-	margin-top: 10px;
-	margin-bottom: 10px;
+li {
+	padding-left: 1em;
+	text-indent: -1em;
+	line-height: 1.5em;
 }
 
 .chatwindow {
@@ -116,10 +94,46 @@ input {
 
 .snippet {
 	font-size: .9em;
-	font-family: calibri, serif;
 	width: 85%;
 	text-align: left;
 	margin-left: 10%;
 	line-height: 1.5;
 	margin-top: 5px;
+	margin-bottom: 5px;
 }
+
+.aboutus {
+	text-align: left;
+	padding: 10px;
+	font-size: .9em;
+
+}
+
+#logo {
+	width: 30%;
+	margin-top: 10px;
+}
+
+#concept {
+	width: 25%;
+}
+
+#meet {
+	width: 50%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#diag {
+	width: 40%;
+	margin-top: 10px;
+	background-color: rgba(255,255,255,0.5);
+	
+}
+
+#face {
+	width: 60%;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+

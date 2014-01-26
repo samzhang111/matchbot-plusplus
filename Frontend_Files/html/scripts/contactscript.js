@@ -37,8 +37,8 @@ $(document).ready(function() {
                     commentObj.email = toAdd;
                     chatwindow.botSays("Cool, thanks! Bye.");
                     sendComment(commentObj);
-                    alert("Thanks for your feedback! Check out our About page.");
-                    window.location.replace("about.html");
+                    alert("Thanks for your feedback!　Ｒｅｄｉｒｅｃｔｉｎｇ　ｙｏｕ　ｔｏ　ｔｈｅ　ｍａｉｎ　ｐａｇｅ．");
+                    window.location.replace("ｉｎｄｅｘ.html");
                 }
                 else {
                     chatwindow.botSays("Not an e-mail, dude. Try again?");

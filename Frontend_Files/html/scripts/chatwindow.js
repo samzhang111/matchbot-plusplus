@@ -21,16 +21,23 @@ var chatwindow = {
         
     },
 
-    userSays: function(userinput) {
-        $(".chatwindow").append("<span>You: </span>" + userinput + "<br>");
+    sayNoScroll: function(user, userinput) {
+        $(".chatwindow").append("<span>" + user + ": </span>" + userinput + "<br>");
+        $('input[name=inputtext]').val('');
+    },
+
+    say: function(user, userinput) {
+        $(".chatwindow").append("<span>" + user + ": </span>" + userinput + "<br>");
         $(".chatwindow").animate({scrollTop: $('.chatwindow').prop("scrollHeight")}, 500);
         $('input[name=inputtext]').val('');
     },
 
+    userSays: function(userinput) {
+        this.say("You", userinput);
+    },
+
     botSays: function(text) {
-        $(".chatwindow").append("<span>MatchBot: </span>" + text + "<br>");
-        $(".chatwindow").animate({scrollTop: $('.chatwindow').prop("scrollHeight")}, 500);
-        $('input[name=inputtext]').val('');
+        this.say("MatchBot", text);
     },
 
     send_and_get_line: function(userinputobj) {
