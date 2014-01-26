@@ -11,11 +11,18 @@ $(document).ready(function() {
             chatwindow.userSays(uIn);
 
             chatwindow.chars_typed += uIn.length;
-            if (chatwindow.chars_typed > chatwindow.CONVO_LIMIT) {
+            if (chatwindow.chars_typed > chatwindow.CONVO_LIMIT & chatwindow.currenttype != "email") {
                 chatwindow.currenttype="last";
             }
+            else {
+                chatwindow.getBot({
+                    msg: uIn,
+                    cat: chatwindow.currenttype
+                });
+                chatwindow.calculate(uIn);
+            }
 
-            else if (chatwindow.currenttype == "email") {
+            if (chatwindow.currenttype == "email") {
                 if (isEmail(uIn)) {
                     chatwindow.email = uIn;
                     chatwindow.end_seq();
@@ -24,17 +31,11 @@ $(document).ready(function() {
                     chatwindow.botSays("Oh no! Not an e-mail! Try again?");
                 }
             }
-            else if (chatwindow.currenttype == "last") {
+            
+            if (chatwindow.currenttype == "last") {
                 chatwindow.botSays("One last thing - we need your e-mail so that future matches can contact you. What's your e-mail?");
                 chatwindow.currenttype = "email";
 
-            }
-            else {
-                chatwindow.getBot({
-                    msg: uIn,
-                    cat: chatwindow.currenttype
-                });
-                chatwindow.calculate(uIn);
             }
         }
     });
