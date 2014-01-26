@@ -1,1 +1,17 @@
-../../../Frontend_Files/html/index.html
+<!DOCTYPE html>
+
+    <%= javascript_include_tag "indexscript.js" %>
+    <%= javascript_include_tag "chatwindow.js" %>
+
+    <div>
+		<img src="images/matchbotlogo_alpha.png" id="logo"/>
+		<p>Talk to our MatchBot to meet your match!</p>
+		<div>
+	<div class="chatwindow">
+		<table class='prompt'>
+			<tr>
+				<td width="70px"><span>You &gt;&gt;  </span></td>
+				<td><input id="userinput" name='inputtext' placeholder='Type here'/></td>
+			</tr>
+		</table>
+	</div>

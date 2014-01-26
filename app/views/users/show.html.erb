@@ -1,11 +1,40 @@
-<h1><%= @user.username %>: <%= @user.email %></h1>
+<!--taking the html from the match page-->
 
-<p><%= @responses.count %> responses</p>
+<%= @matches.count %>
 
-<ul>
-<% @responses.each do |response| %>
-    <li>
-    <%= response.content %>
-    </li>
+<% @matches.each do |match| %>
+<p>
+    <div>user_id: <%= match[0] %></div>
+    <div>likeness: <%= match[1] %></div>
+    <div>email: <%= match[2] %></div>
+    <div>message: <%= match[3] %></div>
+</p>
 <% end %>
-</ul>
+
+<div>
+  <table class="matches">
+    <tr>
+      <td>
+        <div class="email"></div>
+        <div class="bar">
+          <div class="percentage"></div>
+        </div>
+        <div class="snippet"></div>
+      </td>
+      <td>
+        <div class="email"></div>
+        <div class="bar">
+          <div class="percentage"></div>
+        </div>
+        <div class="snippet"></div>
+      </td>
+      <td>
+        <div class="email"></div>
+        <div class="bar">
+          <div class="percentage"></div>
+        </div>
+        <div class="snippet"></div>
+      </td>
+    </tr>
+  </table>
+</div>

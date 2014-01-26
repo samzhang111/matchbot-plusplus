@@ -1,9 +1,6 @@
 <ul>
 <% @users.each do |user| %>
-    <li><%= user.username%>:    <%= user.email %>
-      <ul><% user.responses.each do |response| %>
-        <li><%= response.content %></li>
-      <% end %> </ul>
+    <li><%= user.email %>
     </li>
 <% end %>
 </ul>

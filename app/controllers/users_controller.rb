@@ -1,3 +1,4 @@
+
 class UsersController < ApplicationController
   def new
     @user = User.new
@@ -11,9 +12,12 @@ class UsersController < ApplicationController
       render 'new'
     end
   end
+  def destroy
 
+  end
   def show
     @user = User.find(params[:id])
+    @matches = find_matches(@user)
   end
 
   def index
@@ -23,6 +27,86 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:email, :freqs, :nonstoplist_freqs, :avg_length, :total_words)
+    params.require(:user).permit(:email, :freqs, :avg_length, :total_words)
   end
+
+  def find_matches(user)
+    matches = []
+    @users = User.all
+    @users.each do |u|
+      likeness = similarity(user,u)   # returns float in [0,1]
+      snippet = "default snippet"
+
+      if matches.size > 3
+        3.times { |i|
+          if matches[i][1] < likeness
+            matches[i]=[u.id, likeness, u.email, snippet]
+            break
+          end
+        }
+      elsif matches.size < 3
+        matches.append([u.id, likeness,u.email,snippet])
+      end
+    end
+  
+    matches
+
+  end
+
+=begin
+      # This is an example data structure that will be passed into similarity:
+      one = {
+          :freqs => {
+              "sea"=> 1,
+              "salt"=> 1,
+              "I"=> 1,
+              "the"=> 1,
+              "love"=> 1,
+              "chocolate"=> 1
+          },
+          :nonstoplist_freqs => {
+              "lol" => 1,
+              "omg" => 2
+          },
+          :avg_len => 0,
+          :total_words => 0
+      }
+
+
+
+      similarity(one, two) returns a result object
+
+      result = {
+          :score => 0.0 #(0 to 1)
+      :matchUser => userName
+      }
+=end
+
+  def similarity(one, two)
+
+    score = 0.0
+    one_freqs = JSON[one.freqs]
+    two_freqs = JSON[two.freqs]
+    words = one_freqs.keys
+
+    words.each do |word, value|
+      if two_freqs.has_key? word
+        score += [one_freqs[word], two_freqs[word] ].min
+      end
+    end
+
+    # normalize score by higher total_words
+    # if we don't do this, people who talk A LOT will
+    # tend to have higher scores
+    score /= [one.total_words, two.total_words].max
+
+
+    # penalize pairs with different average sentence lengths
+    smaller = [one.avg_length, two.avg_length].min
+    larger = [one.avg_length, two.avg_length].max
+
+    score *= smaller/larger
+
+  end
+
 end

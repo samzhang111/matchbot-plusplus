@@ -1,0 +1,11 @@
+<h1>This is a test form for adding new Users with child Responses</h1>
+
+<%= form_for @user do |f| %>
+    <%= render 'shared/error_messages' %>
+    <%= f.hidden_field :email %>
+    <%= f.hidden_field :freqs %>
+    <%= f.hidden_field :avg_length %>
+    <%= f.hidden_field :total_words %>
+    
+    <%= f.submit "Submit" %>
+<% end %>

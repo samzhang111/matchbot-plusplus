@@ -1,13 +1,24 @@
-<h1>This is a test form for adding new Users with child Responses</h1>
+<%= javascript_include_tag "indexscript" %>
+<%= javascript_include_tag "chatwindow" %>
+<div>
+  <p>Talk to our MatchBot to meet your match!</p>
+  <div>
+    <div class="chatwindow">
+    </div>
+    <div id="userinput">
+      <input name="inputtext" placeholder="Press enter to send"/>
+    </div>
 
-<%= form_for @user do |f| %>
-    <%= render 'shared/error_messages' %>
+    <!--hidden form -->
 
-    <%= f.hidden_field :email %>
-    <%= f.hidden_field :freqs %>
-    <%= f.hidden_field :nonstoplist_freqs %>
-    <%= f.hidden_field :avg_length %>
-    <%= f.hidden_field :total_words %>
-    
-    <%= f.submit "Submit" %>
-<% end %>
+    <%= form_for @user do |f| %>
+        <%= render 'shared/error_messages' %>
+
+        <%= f.text_field :email %>
+        <%= f.text_field :freqs %>
+        <%= f.text_field :avg_length %>
+        <%= f.text_field :total_words %>
+
+        <%= f.submit "Submit" %>
+
+    <% end %>

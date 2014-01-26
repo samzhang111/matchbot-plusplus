@@ -2,28 +2,64 @@ var chatwindow = {
     statistics: {
         frequencies: {},
         nonstoplist_freq: {},
-        avg_length: 0
+        avg_length: 0,
+        total_words: 0
     },
     
     allresponses: [],
-
+    email: "",
+    chars_typed: 0,
+    CONVO_LIMIT: 10,
     currenttype: "first",
 
-    userSays: function(userinput) {
-        $(".chatwindow").append("<span>You: </span>" + userinput + "<br>");
+    populate_forms: function() {
+        // populate a hidden form
+        $("input[name=user[email]]").val(chatwindow.email);
+        $("input[name=user[avg_length]]").val(chatwindow.statistics.avg_length);
+        $("input[name=user[frequencies]]").val(JSON.stringify(chatwindow.statistics.frequencies));
+        $("input[name=user[nonstoplist_freq]]").val(JSON.stringify(chatwindow.statistics.nonstoplist_freq));
+        $("input[name=user[total_words]]").val(chatwindow.statistics.total_words);
+        
+    },
+
+    sayNoScroll: function(user, userinput) {
+        $(".chatwindow").append("<span>" + user + ": </span>" + userinput + "<br>");
+        $('input[name=inputtext]').val('');
+    },
+
+    say: function(user, userinput) {
+        $(".prompt").before("<span>" + user + ": </span>" + userinput + "<br>");
         $(".chatwindow").animate({scrollTop: $('.chatwindow').prop("scrollHeight")}, 500);
         $('input[name=inputtext]').val('');
     },
 
+    userSays: function(userinput) {
+        this.say("You", userinput);
+    },
+
     botSays: function(text) {
-        $(".chatwindow").append("<span>MatchBot: </span>" + text + "<br>");
-        $(".chatwindow").animate({scrollTop: $('.chatwindow').prop("scrollHeight")}, 500);
-        $('input[name=inputtext]').val('');
+        this.say("MatchBot", text);
+    },
+
+    send_line: function(line) {
+        //send statistics to rails
+        $.get("/say_bot", line).done(function (data) {
+            received_line = data;
+            currentype = "msg";
+            chatwindow.botSays(data.slice(2,-2));
+        });
+    },
+
+    send_and_get_line: function(userinputobj) {
+        //send line of conversation, get response
+        response = $.get("/bot", JSON.stringify(userinputobj));
+        return response;
     },
 
     getBot: function(userinput) {
         // gets bot's response
-        //var botresponse = {msg: "temporary placeholder", cat: "msg"};
+        //var botresponse = this.send_and_get_line(userinput);
+        this.currentype = 'msg';
         this.send_line(userinput);
     },
     calculate: function(userinput, whatthebotsaid) {
@@ -58,43 +94,14 @@ var chatwindow = {
             total += response.length;
         });
         chatwindow.statistics.avg_length = total/chatwindow.allresponses.length;
-
-        // punctuation per 
-    },
-    
-    send_line: function(line) {
-        //send statistics to rails
-        var received_line = "";
-        $.get("/say_bot", line).done(function (data) {
-            received_line = data;
-            currentype = "msg";
-            chatwindow.botSays(data.slice(2,-2));
-        });
-        return received_line;
-    },
-
-    send_data: function() {
-        //send statistics to rails
-        /*
-        $.ajax({
-            type: "POST",
-            url: "/AcceptConvo",
-            data: JSON.stringify(chatwindow.statistics),
-            contentType: "application/json; charset=utf-8",
-            dataType: "json",
-            failure: function(errMsg) {
-                alert("Connection Error: Chat data not sent");
-            }
-        });
-        */
-        console.log("in send_data");
+        chatwindow.statistics.total_words = total;
     },
 
     end_seq: function() {
         chatwindow.final_calculations();
         chatwindow.send_data();
         alert("Sweet. Now rerouting you to your matches!");
-        window.location.replace("matches.html");
+        //window.location.replace("matches.html");
     },        
 };
 

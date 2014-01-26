@@ -1,16 +1,9 @@
 <!DOCTYPE html>
-<head>
-	<title>
-		MatchBot
-	</title>
-	<link rel='stylesheet' type= "text/css" href='styles/stylesheet.css'/>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script type="text/javascript" src='scripts/chatwindow.js'></script>
-	<script type="text/javascript" src='scripts/indexscript.js'></script>
-</head>
 
-<body>
-	<div>
+    <%= javascript_include "indexscript.js" %>
+    <%= javascript_include "chatwindow.js" %>
+
+    <div>
 		<img src="images/matchbotlogo_alpha.png" id="logo"/>
 		<p>Talk to our MatchBot to meet your match!</p>
 		<div>
@@ -22,7 +15,3 @@
 			</tr>
 		</table>
 	</div>
-	<div class="footer">
-		<a href="about.html"> About </a> | <a href="contact.html"> Contact us </a> | <a href="matches.html"> Matches </a>
-	</div>
-</body>
