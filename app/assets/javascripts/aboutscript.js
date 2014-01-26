@@ -1,10 +1,10 @@
 $(document).ready(function() {
 	// Get matches
-	var matchtext = [[1., "Sam \'Franzen\' Zhang '14", "Fullstack, Concept, Algorithm design",  "\"So, where's the swag?\""],
-					[1., "Stella Cho '14", "Frontend: HTML, CSS, JavaScript", "\"Let's go outside!\""],
-					[1., "Luis \'Panther\' Ramirez '14", "Bot integration"],
+	var matchtext = [[1., "Sam \'Franzen\' Zhang '14", "Fullstack, Concept, Algorithm design",  "\"It ruined everything.\""],
+					[1., "Stella Cho '14", "Frontend: HTML, CSS, JavaScript", "\"Guys, let's use DropBox.\""],
+					[1., "Luis \'Panther\' Ramirez '14", "API Master", "\"It always f*cks up. It's not a matter of if, it's a matter of when.\""],
 					[1., "Rita \'Git\' Zevallos '15", "Backend: Ruby on Rails, DB interfacing", "\"I don't get frustrated. The only thing that frustrates me is Git.\""],
-					[1., "Adrian Wan '15", "Fullstack apprentice", "\"Physicists are clutch.\""],
+					[1., "Adrian Wan '15", "Fullstack apprentice", "\"Screw git. Use floobits.\""],
 					[0., "Bla"]];
 	
 	var images = ["",
