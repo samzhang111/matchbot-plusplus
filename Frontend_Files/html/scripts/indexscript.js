@@ -17,6 +17,7 @@ $(document).ready(function() {
             chatwindow.userSays(uIn);
             if (chatwindow.currenttype == "email") {
                 if (isEmail(uIn)) {
+                    chatwindow.email = uIn;
                     chatwindow.end_seq();
                 }
                 else {
