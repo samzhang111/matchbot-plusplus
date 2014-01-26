@@ -31,8 +31,8 @@ var chatwindow = {
         
         // gets bot's response
         //var botresponse = this.send_and_get_line(userinput);
-        var botresponse = {msg: "temporary placeholder", cat: "msg"}
-        currentype = botresponse.cat
+        var botresponse = {msg: "temporary placeholder", cat: "msg"};
+        currentype = botresponse.cat;
         this.botSays(botresponse.msg);
     },
     calculate: function(userinput, whatthebotsaid) {
