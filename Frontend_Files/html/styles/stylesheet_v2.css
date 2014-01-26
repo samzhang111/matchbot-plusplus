@@ -12,10 +12,15 @@ div {
 }
 
 input {
-	border: 2px solid grey;
+	border: 0;
 	border-radius: 7px;
-	width: 50%;
-	padding: 5px 5px 5px 5px;
+	width: 100%;
+	padding: 5px;
+
+}
+
+input:focus {
+	outline: none;
 }
 
 li {
@@ -24,22 +29,34 @@ li {
 	line-height: 1.5em;
 }
 
+.prompt {
+	width: 100%;
+	word-wrap: break-word;
+}
+
 .chatwindow {
 	width: 50%;
 	height: 20em;
 	margin: 0 auto;
 	border: 2px solid grey;
-	border-radius: 7px;
-	padding: 5px 5px 5px 5px;
+	border-radius: 10px;
+	padding: 8px;
 	line-height: 1.5;
 	text-align: left;
 	background-color: white;
-	overflow: auto;
+	overflow-y: auto;
+	overflow-x: none;
 	font-family: calibri, serif;
 }
 
 .footer {
 	margin-top: 20px;
+}
+
+td {
+	margin: 0;
+	padding: 0;
+	line-height: 0;
 }
 
 .matches { /* the match table */

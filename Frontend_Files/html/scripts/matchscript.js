@@ -1,15 +1,15 @@
 $(document).ready(function() {
 	// Get matches
 	var matchtext = {
-		"awan": {
+		"awan@thebomb.com": {
 			score: .75,
 			msg: "physicists are clutch"
 		},
-		"rita": {
+		"sam@swag.4me": {
 			score: .60,
 			msg: "i JUST deleted the name field"
 		},
-		"luis": {
+		"luis@master.bot": {
 			score: .40,
 			msg: "did he fall down?"
 		}
@@ -21,12 +21,12 @@ $(document).ready(function() {
 		for (name in matchtext) {
 			var item = "table td:nth-child(";
 			var per = matchtext[name].score*100 + "%";
-			$(item + (i+1) + ") div:first-child() div").append(per);
-			$(item + (i+1) + ") div:first-child() div").animate({width: per}, "slow");
-			$(item + (i+1) + ") div:nth-child(2)").append(matchtext[name].msg);
+			$(item + (i+1) + ") > div:nth-child(1)").append(name);			
+			$(item + (i+1) + ") div:nth-child(2) div").append(per);
+			$(item + (i+1) + ") div:nth-child(2) div").animate({width: per}, "slow");
+			$(item + (i+1) + ") div:nth-child(3)").append(matchtext[name].msg);
 			i += 1;
-
-		}
+		};
 		/*for (var i=0; i<3; i++) {
 			var item = "table td:nth-child(";
 			//var temp = item.replace("count",i);

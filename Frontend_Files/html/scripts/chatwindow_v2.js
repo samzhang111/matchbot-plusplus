@@ -11,6 +11,10 @@ var chatwindow = {
 
     currenttype: "first",
 
+    /*init: function() {
+        $(".chatwindow").append("<table class='prompt'><td><tr><span id='prompt'>You :</span></tr><tr><input name='inputtext' placeholder='Type here and enter to send'/></tr></td></table>");
+    },*/
+
     populate_forms: function() {
         // populate a hidden form
         $("input[name=user[email]]").val(chatwindow.email);
@@ -21,23 +25,16 @@ var chatwindow = {
         
     },
 
-    sayNoScroll: function(user, userinput) {
-        $(".chatwindow").append("<span>" + user + ": </span>" + userinput + "<br>");
-        $('input[name=inputtext]').val('');
-    },
-
-    say: function(user, userinput) {
-        $(".chatwindow").append("<span>" + user + ": </span>" + userinput + "<br>");
+    userSays: function(userinput) {
+        $(".prompt").before("<span>You: </span>" + userinput + "<br>");
         $(".chatwindow").animate({scrollTop: $('.chatwindow').prop("scrollHeight")}, 500);
         $('input[name=inputtext]').val('');
     },
 
-    userSays: function(userinput) {
-        this.say("You", userinput);
-    },
-
     botSays: function(text) {
-        this.say("MatchBot", text);
+        $(".prompt").before("<span>MatchBot: </span>" + text + "<br>");
+        $(".chatwindow").animate({scrollTop: $('.chatwindow').prop("scrollHeight")}, 500);
+        $('input[name=inputtext]').val('');
     },
 
     send_and_get_line: function(userinputobj) {

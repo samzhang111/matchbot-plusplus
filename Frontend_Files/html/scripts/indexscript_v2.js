@@ -1,7 +1,8 @@
 $(document).ready(function() {
 
-    // Message handlers
+    // Initialization
     chatwindow.botSays("Tell me about yourself!");
+    //chatwindow.init()
     
     $("#userinput").keypress(function(e) {
         if (e.which == 13) {
