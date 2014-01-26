@@ -1,11 +1,11 @@
 $(document).ready(function() {
 	// Get matches
-	var matchtext = [[1., "Sam Zhang", "Swarthmore 2014", "I love Franzen. Do you have swag for me?"],
-					[1., "Stella Cho", "Swarthmore 2014", "Poo you"],
-					[1., "Luis Ramirez", "Swarthmore 2014", "This bot is stupider than Sam."],
-					[1., "Rita Zevallos", "Swarthmore 2015", "I have allergies to my bed but I need to sleep..."],
-					[1., "Adrian Wan", "Swarthmore 2015", "Physicists are clutch."],
-					[0., "Bla", "Bla", "Bla"]];
+	var matchtext = [[1., "Sam Zhang '14", "Fullstack, Concept, Algorithm design",  "\"I love Franzen. Do you have swag for me?\""],
+					[1., "Stella Cho '14", "Frontend: HTML, CSS, JavaScript", "\"Let's go outside!\""],
+					[1., "Luis Ramirez '14", "Bot integration"],
+					[1., "Rita Zevallos '15", "Backend: Ruby on Rails, DB interfacing"],
+					[1., "Adrian Wan '15", "\"Physicists are clutch.\""],
+					[0., "Bla"]];
 	var images = ["",
 				"http://cs.swarthmore.edu/~scho1/images/myFace.jpg",
 				"",
@@ -24,7 +24,7 @@ $(document).ready(function() {
 				var ind = row*3+col;
 				var convoLen = matchtext[ind].length-1;
 				for (var i=0; i<convoLen; i++){
-					$(item + " div:nth-child(2)").append(matchtext[ind][i+1]+"<br>");
+					$(item + " div:nth-child(3)").append(matchtext[ind][i+1]+"<br>");
 				}
 				
 			}

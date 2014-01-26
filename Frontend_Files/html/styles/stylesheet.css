@@ -11,12 +11,15 @@ span { /*for username display*/
 	font-weight: bold;
 }
 
-h1 {
+div {
 	font-family: calibri, sans-serif;
 }
 
-p {
-	font-family: calibri, sans-serif;
+input {
+	border: 2px solid grey;
+	border-radius: 7px;
+	width: 50%;
+	padding: 5px 5px 5px 5px;
 }
 
 #logo {
@@ -26,6 +29,19 @@ p {
 
 #meet {
 	width: 50%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#diag {
+	width: 30%;
+	margin-top: 10px;
+	background-color: rgba(255,255,255,0.6);
+	
+}
+
+#face {
+	width:60%;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
@@ -44,23 +60,42 @@ p {
 	font-family: calibri, serif;
 }
 
-input {
-	border: 2px solid grey;
-	border-radius: 7px;
-	width: 50%;
-	padding: 5px 5px 5px 5px;
-}
-
 .footer {
 	margin-top: 20px;
 }
 
-.matches { /* the table */
+.matches { /* the match table */
 	width: 90%;
 	margin: 0 auto;
 	table-layout: fixed;
 	border-spacing: 1.5em;
+}
+.matches td {
+	padding: 1.5%;
+	vertical-align: top;
+	border: 4px solid #3780cf;
+	background-color: #68a4e7;
+}
 
+.aboutTable {
+	width: 80%;
+	margin: 0 auto;
+	table-layout: fixed;
+	border-spacing: 3em;
+}
+
+.aboutTable td {
+	padding: 1%;
+	vertical-align: top;
+	border: 4px solid #3780cf;
+	background-color: #68a4e7;
+}
+
+.email {
+	font-family: Courier, sans-serif;
+	text-align: left;
+	padding-bottom: 10px;
+	font-weight: bold;
 }
 
 .percentage {
@@ -76,9 +111,9 @@ input {
 	font-family: calibri, serif;
 	border: 1px solid white;
 	text-align: left;
-
 	
 }
+
 .snippet {
 	font-size: .9em;
 	font-family: calibri, serif;
@@ -87,11 +122,4 @@ input {
 	margin-left: 10%;
 	line-height: 1.5;
 	margin-top: 5px;
-}
-
-.matches td {
-	padding: 1.5%;
-	vertical-align: top;
-	border: 4px solid #3780cf;
-	background-color: #68a4e7;
 }

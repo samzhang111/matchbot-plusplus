@@ -2,12 +2,24 @@ var chatwindow = {
     statistics: {
         frequencies: {},
         nonstoplist_freq: {},
-        avg_length: 0
+        avg_length: 0,
+        total_words: 0
     },
     
     allresponses: [],
+    email: "",
 
     currenttype: "first",
+
+    populate_forms: function() {
+        // populate a hidden form
+        $("input[name=user[email]]").val(chatwindow.email);
+        $("input[name=user[avg_length]]").val(chatwindow.statistics.avg_length);
+        $("input[name=user[frequencies]]").val(JSON.stringify(chatwindow.statistics.frequencies));
+        $("input[name=user[nonstoplist_freq]]").val(JSON.stringify(chatwindow.statistics.nonstoplist_freq));
+        $("input[name=user[total_words]]").val(chatwindow.statistics.total_words);
+        
+    },
 
     userSays: function(userinput) {
         $(".chatwindow").append("<span>You: </span>" + userinput + "<br>");
@@ -67,8 +79,8 @@ var chatwindow = {
             total += response.length;
         });
         chatwindow.statistics.avg_length = total/chatwindow.allresponses.length;
+        chatwindow.statistics.total_words = total;
 
-        // punctuation per 
     },
 
     send_data: function() {
