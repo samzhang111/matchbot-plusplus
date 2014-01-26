@@ -1,12 +1,13 @@
 var chatwindow = {
     statistics: {
         frequencies: {},
+        nonstoplist_freq: {},
         avg_length: 0
     },
     
     allresponses: [],
 
-    currenttype: "",
+    currenttype: "first",
 
     userSays: function(userinput) {
         $(".chatwindow").append("<span>You: </span>" + userinput + "<br>");
@@ -20,12 +21,19 @@ var chatwindow = {
         $('input[name=inputtext]').val('');
     },
 
+    send_and_get_line: function(userinputobj) {
+        //send line of conversation, get response
+        response = $.get("/bot", JSON.stringify(userinputobj));
+        return response;
+    },
+
     getBot: function(userinput) {
-        // gives bot userinput
-        this.allresponses.push(userinput);
+        
         // gets bot's response
-        var botresponse = "Okay.";
-        this.botSays(botresponse);
+        //var botresponse = this.send_and_get_line(userinput);
+        var botresponse = {msg: "temporary placeholder", cat: "msg"}
+        currentype = botresponse.cat
+        this.botSays(botresponse.msg);
     },
     calculate: function(userinput, whatthebotsaid) {
         // update statistics
@@ -33,70 +41,59 @@ var chatwindow = {
 
         var words = userinput.split(" ");
         words.forEach(function(word) {
-            if (word in chatwindow) {
-                chatwindow[word] += 1;
-            }
-            else if (! word in whatthebotsaid) {
-                chatwindow[word] = 1;
-            }
+            if(! word in whatthebotsaid) {
+                if (word in statistics.frequencies) {
+                    statics.frequencies[word] += 1;
+                }
+                else {
+                    statistics.frequencies[word] = 1;
+                }
+                if (!word in stoplist) {
+                    if (word in statistics.nonstoplist_freq) {
+                        statistics.nonstoplist_freq[word] += 1;
+                    }
+                    else {
+                        statistics.nonstoplist_freq[word] = 1;
+                    }
+                }
+             }
         })
-        return userinput;
     },
+    
     final_calculations: function() {
         // called right before sending, to calculate avg line lengths
         var total = 0.0;
-        allresponses.forEach(function (response) {
+        chatwindow.allresponses.forEach(function (response) {
             total += response.length;
         });
-        statistics.avg_length = total/response.length;
+        chatwindow.statistics.avg_length = total/chatwindow.allresponses.length;
 
         // punctuation per 
     },
 
-    send_and_get_line: function(userinputobj) {
-        //send line of conversation, get response
-        userinputobj = {
-            msg: "hello, this is a test message from the user.",
-            type: "msg",
-        };
-        response = $.get("/bot", JSON.stringify(userinputobj));
-        return response;
-    },
-
     send_data: function() {
         //send statistics to rails
+        /*
         $.ajax({
             type: "POST",
             url: "/AcceptConvo",
-            data: JSON.stringify(statistics),
+            data: JSON.stringify(chatwindow.statistics),
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             failure: function(errMsg) {
                 alert("Connection Error: Chat data not sent");
             }
         });
+        */
+        console.log("in send_data");
     },
 
     end_seq: function() {
-        botSays("Great! Email?");
-        var validemail = false;
-        while (!validemail) {
-            $("#userinput").keypress(function(e) {
-                var uIn;
-                if(e.which == 13) {
-                    uIn = $('input[name=inputtext]').val();
-                }
-                appendWindow(uIn);
-                if (isEmail(uIn)) {
-                    validemail = true;
-                }
-                else {
-                    manualtext("Oh no! Not an e-mail! Try again?");
-                }
-            });
-
-        }
-    }
+        chatwindow.final_calculations();
+        chatwindow.send_data();
+        alert("Sweet. Now rerouting you to your matches!");
+        window.location.replace("matches.html");
+    },        
 };
 
 function isEmail(input) {

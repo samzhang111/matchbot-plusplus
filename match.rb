@@ -9,12 +9,26 @@ one = {
 		"love"=> 1,
 		"chocolate"=> 1
 	},
+	:nonstoplist_freqs => {
+		"lol" => 1,
+		"omg" => 2
+	},
 	:avg_len => 0,
 	:total_words => 0
+}
+
+
+
+similarity(one, two) returns a result object
+
+result = {
+	:score => 0.0 #(0 to 1)
+	:matchUser => userName
 }
 =end
 
 def similarity(one, two)
+
 	score = 0.0
 
 	words = one[:freqs].keys

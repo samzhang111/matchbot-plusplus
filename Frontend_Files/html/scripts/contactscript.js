@@ -1,6 +1,6 @@
 var commentObj = {
     comment: "",
-    type: "",
+    email: "",
 };
 
 $(document).ready(function() {
@@ -12,6 +12,8 @@ $(document).ready(function() {
         if(e.which == 13) {
         	var toAdd = $('input[name=inputtext]').val();
             commentObj.comment = toAdd;
+            chatwindow.allresponses.push(toAdd);
+
             chatwindow.userSays(toAdd);
         }
     });
