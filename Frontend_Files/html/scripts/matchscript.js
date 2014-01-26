@@ -1,32 +1,30 @@
 $(document).ready(function() {
 	// Get matches
 	var matchtext = {
-		"###function": {
-			user: "awan",
+		"awan@thebomb.com": {
 			score: .75,
 			msg: "physicists are clutch"
 		},
-		"gibberishID": {
-			user: "sam",
+		"sam@swag.4me": {
 			score: .60,
 			msg: "i JUST deleted the name field"
 		},
-		"morehash": {
-			user: "rita",
+		"luis@master.bot": {
 			score: .40,
 			msg: "did he fall down?"
 		}
+
 	};
 	
 	var addMatches = function() {
 		var i = 0;
-		for (hash in matchtext) {
+		for (name in matchtext) {
 			var item = "table td:nth-child(";
-			var per = matchtext[hash].score*100 + "%";
-			$(item + (i+1) + ") > div:nth-child(1)").append(matchtext[hash].user);			
+			var per = matchtext[name].score*100 + "%";
+			$(item + (i+1) + ") > div:nth-child(1)").append(name);			
 			$(item + (i+1) + ") div:nth-child(2) div").append(per);
 			$(item + (i+1) + ") div:nth-child(2) div").animate({width: per}, "slow");
-			$(item + (i+1) + ") div:nth-child(3)").append(matchtext[hash].msg);
+			$(item + (i+1) + ") div:nth-child(3)").append(matchtext[name].msg);
 			i += 1;
 		};
 		/*for (var i=0; i<3; i++) {
@@ -60,5 +58,6 @@ $(document).ready(function() {
 	//$("table tr td:first-child").append("hello");
 
 	addMatches();
+
 	 
 });

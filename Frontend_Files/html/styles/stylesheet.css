@@ -7,25 +7,15 @@ span { /*for username display*/
 	font-weight: bold;
 }
 
-.matchbot {
-	color: #3780cf;
-}
-
 div {
 	font-family: calibri, sans-serif;
 }
 
 input {
-	border: 0;
+	border: 2px solid grey;
 	border-radius: 7px;
-	width: 100%;
-	padding: 5px;
-	font-family: Calibri, sans-serif;
-	font-size: .9em;
-}
-
-input:focus {
-	outline: none;
+	width: 50%;
+	padding: 5px 5px 5px 5px;
 }
 
 li {
@@ -35,10 +25,15 @@ li {
 }
 
 .prompt {
-	width: 100%;
-	word-wrap: break-word;
 	background-color: #b2b2b2;
-	padding: 2px;
+	width: 100%;
+	margin: 2px;
+	border-radius: 5px;
+}
+
+input {
+	width: 95%;
+	border: 0px solid white;
 }
 
 .chatwindow {
@@ -46,20 +41,18 @@ li {
 	height: 20em;
 	margin: 0 auto;
 	border: 2px solid grey;
-	border-radius: 10px;
-	padding: 8px;
+	border-radius: 7px;
+	padding: 5px 5px 5px 5px;
 	line-height: 1.5;
 	text-align: left;
 	background-color: white;
-	overflow-y: auto;
-	overflow-x: none;
+	overflow: auto;
 	font-family: calibri, serif;
 }
 
 .footer {
 	margin-top: 20px;
 }
-
 
 .matches { /* the match table */
 	width: 90%;
@@ -72,13 +65,7 @@ li {
 	vertical-align: top;
 	border: 4px solid #3780cf;
 	background-color: #68a4e7;
-
 }
-
-/*.matchon {
-	background-color: #ff7b34;
-	border: 4px solid #a64511;
-}*/
 
 .aboutTable {
 	width: 80%;
@@ -104,6 +91,7 @@ li {
 .percentage {
 	width: 0%;
 	background-color: #3780cf;
+
 }
 
 .bar {
