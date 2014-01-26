@@ -34,6 +34,9 @@ class UsersController < ApplicationController
     matches = []
     @users = User.all
     @users.each do |u|
+      if u == user
+          next
+      end
       likeness = similarity(user,u)   # returns float in [0,1]
       snippet = "default snippet"
       email = (u.email).split('@')[0]

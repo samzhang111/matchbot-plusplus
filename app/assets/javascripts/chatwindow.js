@@ -9,17 +9,17 @@ var chatwindow = {
     allresponses: [],
     email: "",
     chars_typed: 0,
-    CONVO_LIMIT: 10,
+    CONVO_LIMIT: 20,
     currenttype: "first",
 
     send_data: function() {
         // populate a hidden form
         $("#user_email").val(chatwindow.email);
         $("#user_avg_length").val(chatwindow.statistics.avg_length);
-        $("#user_frequencies").val(JSON.stringify(chatwindow.statistics.frequencies));
+        $("#user_freqs").val(JSON.stringify(chatwindow.statistics.frequencies));
         $("#user_nonstoplist_freq").val(JSON.stringify(chatwindow.statistics.nonstoplist_freq));
         $("#user_total_words").val(chatwindow.statistics.total_words);
-        $("#user_submit").submit();
+        $("#submit").show();
         //send data
     },
 
@@ -59,26 +59,23 @@ var chatwindow = {
     },
     calculate: function(userinput, whatthebotsaid) {
         // update statistics
-        whatthebotsaid = {};
 
         var words = userinput.split(" ");
         words.forEach(function(word) {
-            if(! word in whatthebotsaid) {
-                if (word in statistics.frequencies) {
-                    statics.frequencies[word] += 1;
+            if (word in chatwindow.statistics.frequencies) {
+                chatwindow.statistics.frequencies[word] += 1;
+            }
+            else {
+                chatwindow.statistics.frequencies[word] = 1;
+            }
+            if (!word in stoplist) {
+                if (word in chatwindow.statistics.nonstoplist_freq) {
+                    chatwindow.statistics.nonstoplist_freq[word] += 1;
                 }
                 else {
-                    statistics.frequencies[word] = 1;
+                    chatwindow.statistics.nonstoplist_freq[word] = 1;
                 }
-                if (!word in stoplist) {
-                    if (word in statistics.nonstoplist_freq) {
-                        statistics.nonstoplist_freq[word] += 1;
-                    }
-                    else {
-                        statistics.nonstoplist_freq[word] = 1;
-                    }
-                }
-             }
+            }
         })
     },
     

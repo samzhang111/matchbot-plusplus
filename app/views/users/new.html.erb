@@ -2,12 +2,12 @@
 <%= javascript_include_tag "chatwindow.js" %>
 
 <div>
-  <p>Talk to our MatchBot to meet your match! It takes the average user five minutes to complete.</p>
+  <p>Talk to MatchBot to meet your match! It'll only take three minutes.</p>
   <div>
     <div class="chatwindow">
       <table class='prompt'>
         <tr>
-          <td width="80px"><span>You &gt;</span></td>
+          <td><span>You &gt;</span></td>
           <td><input id="userinput" name='inputtext' placeholder='Type here'/></td>
         </tr>
       </table>
@@ -19,11 +19,11 @@
     <%= form_for @user do |f| %>
         <%= render 'shared/error_messages' %>
 
-        <%= f.text_field :email %>
-        <%= f.text_field :freqs %>
-        <%= f.text_field :avg_length %>
-        <%= f.text_field :total_words %>
+        <%= f.hidden_field :email %>
+        <%= f.hidden_field :freqs %>
+        <%= f.hidden_field :avg_length %>
+        <%= f.hidden_field :total_words %>
 
-        <%= f.submit "Submit" %>
+        <%= f.submit "Submit", id:"submit" %>
 
     <% end %>

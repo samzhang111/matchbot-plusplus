@@ -156,3 +156,9 @@ input {
 	margin-bottom: 10px;
 }
 
+#submit {
+  margin-top: 15px;
+	box-shadow: 0px 0px 5px black;
+  width: 50%;
+  background-color: #68a4e7;
+}

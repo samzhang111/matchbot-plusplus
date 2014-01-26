@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+    $("#submit").hide();
     // Initialization
     chatwindow.botSays("Tell me about yourself!");
     //chatwindow.init()
@@ -14,14 +14,6 @@ $(document).ready(function() {
             if (chatwindow.chars_typed > chatwindow.CONVO_LIMIT & chatwindow.currenttype != "email") {
                 chatwindow.currenttype="last";
             }
-            else {
-                chatwindow.getBot({
-                    msg: uIn,
-                    cat: chatwindow.currenttype
-                });
-                chatwindow.calculate(uIn);
-            }
-
             if (chatwindow.currenttype == "email") {
                 if (isEmail(uIn)) {
                     chatwindow.email = uIn;
@@ -31,6 +23,15 @@ $(document).ready(function() {
                     chatwindow.botSays("Oh no! Not an e-mail! Try again?");
                 }
             }
+            
+            if (chatwindow.currenttype == "msg") {
+                chatwindow.getBot({
+                    msg: uIn,
+                    cat: chatwindow.currenttype
+                });
+                chatwindow.calculate(uIn);
+            }
+
             
             if (chatwindow.currenttype == "last") {
                 chatwindow.botSays("One last thing - we need your e-mail so that future matches can contact you. What's your e-mail?");
