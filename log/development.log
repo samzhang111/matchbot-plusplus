@@ -35348,3 +35348,2785 @@ ActionController::RoutingError (No route matches [GET] "/images/squared_metal.pn
 
 
 Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:24:38 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-26 14:26:37 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3686946468998940738__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (35.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-26 14:27:08 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 244ms (Views: 242.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:27:08 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:27:08 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:27:08 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:27:08 -0500
+
+
+Started GET "/assets/indexscript.js" for 127.0.0.1 at 2014-01-26 14:27:08 -0500
+
+
+Started GET "/images/matchbotlogo_alpha.png" for 127.0.0.1 at 2014-01-26 14:27:08 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/matchbotlogo_alpha.png"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (40.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (110.5ms)
+
+
+Started GET "/images/squared_metal.png" for 127.0.0.1 at 2014-01-26 14:27:09 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/squared_metal.png"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (38.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-26 14:27:51 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 15ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:27:51 -0500
+
+
+Started GET "/assets/indexscript.js" for 127.0.0.1 at 2014-01-26 14:27:51 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:27:51 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:27:51 -0500
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:27:51 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-26 14:28:42 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:28:42 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:28:42 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:28:42 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:28:42 -0500
+
+
+Started GET "/assets/indexscript.js" for 127.0.0.1 at 2014-01-26 14:28:42 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-26 14:28:54 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:28:54 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:28:54 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:28:54 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:28:54 -0500
+
+
+Started GET "/assets/indexscript.js" for 127.0.0.1 at 2014-01-26 14:28:54 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-26 14:28:55 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:28:55 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:28:55 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:28:55 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:28:55 -0500
+
+
+Started GET "/assets/indexscript.js" for 127.0.0.1 at 2014-01-26 14:28:55 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-26 14:29:00 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:29:00 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:29:00 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:29:00 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:29:00 -0500
+
+
+Started GET "/assets/indexscript.js" for 127.0.0.1 at 2014-01-26 14:29:00 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-26 14:29:09 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:29:09 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:29:09 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:29:09 -0500
+
+
+Started GET "/assets/indexscript.js" for 127.0.0.1 at 2014-01-26 14:29:09 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:29:09 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-26 14:29:10 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+ERROR: compiling _app_views_layouts_application_html_erb__1270409640665610999_2169536380 RAISED /Users/ritazevallos/Projects/matchbot-plus/matchbot-plusplus/app/views/layouts/application.html.erb:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+...nd=( link_to 'About' about_path);@output_buffer.safe_append=...
+...                               ^
+Function body:           def _app_views_layouts_application_html_erb__1270409640665610999_2169536380(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "layouts/application";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='<!DOCTYPE html>
+<html>
+<head>
+  <title>Matchbot</title>
+  ';@output_buffer.append=( stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true );@output_buffer.safe_append='
+  ';@output_buffer.append=( javascript_include_tag "application", "data-turbolinks-track" => true );@output_buffer.safe_append='
+  ';@output_buffer.append=( csrf_meta_tags );@output_buffer.safe_append='
+</head>
+<body>
+';@output_buffer.append=( image_tag 'matchbotlogo.png',id: 'logo' );@output_buffer.safe_append='
+
+';@output_buffer.append=( yield );@output_buffer.safe_append='
+
+<div class="footer">
+  ';@output_buffer.append=( link_to 'About' about_path);@output_buffer.safe_append=' | <a href="contact.html"> Contact us </a> | <a href="matches.html"> Matches </a>
+</div>
+
+
+';@output_buffer.append=( debug(params) if Rails.env.development? );@output_buffer.safe_append='
+
+</body>
+</html>
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `module_eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `compile'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_view/template.rb:248:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `compile!'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_view/template.rb:142:in `block in render'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/notifications.rb:161:in `instrument'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_view/template.rb:141:in `render'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:23:in `render'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:97:in `render'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:16:in `render'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:189:in `process_action'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:403:in `_run__775847341175491171__process_action__callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:136:in `process'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:44:in `process'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal.rb:195:in `dispatch'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal.rb:231:in `block in action'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:680:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-4.0.2/lib/active_record/query_cache.rb:36:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-4.0.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-4.0.2/lib/active_record/migration.rb:369:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:373:in `_run__3686946468998940738__call__callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/railties-4.0.2/lib/rails/rack/logger.rb:38:in `call_app'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `block in call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:25:in `tagged'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `tagged'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/static.rb:64:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/railties-4.0.2/lib/rails/engine.rb:511:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/railties-4.0.2/lib/rails/application.rb:97:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (/Users/ritazevallos/Projects/matchbot-plus/matchbot-plusplus/app/views/layouts/application.html.erb:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+...nd=( link_to 'About' about_path);@output_buffer.safe_append=...
+...                               ^):
+    12: <%= yield %>
+    13: 
+    14: <div class="footer">
+    15:   <%= link_to 'About' about_path%> | <a href="contact.html"> Contact us </a> | <a href="matches.html"> Matches </a>
+    16: </div>
+    17: 
+    18: 
+  actionpack (4.0.2) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.2) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.2) lib/action_view/template.rb:248:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionpack (4.0.2) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.2) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.2) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.2) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__775847341175491171__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3686946468998940738__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-26 14:29:22 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:29:22 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:29:22 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:29:22 -0500
+
+
+Started GET "/assets/indexscript.js" for 127.0.0.1 at 2014-01-26 14:29:22 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:29:22 -0500
+
+
+Started GET "/about" for 127.0.0.1 at 2014-01-26 14:29:24 -0500
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (143.0ms)
+Completed 200 OK in 149ms (Views: 148.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:29:24 -0500
+
+
+Started GET "/assets/aboutscript.js" for 127.0.0.1 at 2014-01-26 14:29:24 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:29:24 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:29:24 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:29:24 -0500
+
+
+Started GET "/assets/matcheffects.js" for 127.0.0.1 at 2014-01-26 14:29:24 -0500
+
+
+Started GET "/assets/adrian.jpg" for 127.0.0.1 at 2014-01-26 14:29:24 -0500
+
+
+Started GET "/assets/aboutDiag.png" for 127.0.0.1 at 2014-01-26 14:29:24 -0500
+
+
+Started GET "/images/concept.png" for 127.0.0.1 at 2014-01-26 14:29:24 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/concept.png"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (41.2ms)
+
+
+Started GET "/images/aboutTitle.png" for 127.0.0.1 at 2014-01-26 14:29:25 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/aboutTitle.png"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (126.8ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-01-26 14:29:48 -0500
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:29:48 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:29:48 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:29:48 -0500
+
+
+Started GET "/assets/aboutscript.js" for 127.0.0.1 at 2014-01-26 14:29:48 -0500
+
+
+Started GET "/assets/matcheffects.js" for 127.0.0.1 at 2014-01-26 14:29:48 -0500
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:29:48 -0500
+
+
+Started GET "/assets/adrian.jpg" for 127.0.0.1 at 2014-01-26 14:29:48 -0500
+
+
+Started GET "/images/concept.png" for 127.0.0.1 at 2014-01-26 14:29:48 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/concept.png"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (53.7ms)
+
+
+Started GET "/assets/aboutDiag.png" for 127.0.0.1 at 2014-01-26 14:29:48 -0500
+
+
+Started GET "/images/squared_metal.png" for 127.0.0.1 at 2014-01-26 14:29:48 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/squared_metal.png"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (42.1ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-01-26 14:30:22 -0500
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:30:22 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:30:22 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:30:22 -0500
+
+
+Started GET "/assets/matcheffects.js" for 127.0.0.1 at 2014-01-26 14:30:22 -0500
+
+
+Started GET "/assets/aboutscript.js" for 127.0.0.1 at 2014-01-26 14:30:22 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:30:22 -0500
+
+
+Started GET "/assets/adrian.jpg" for 127.0.0.1 at 2014-01-26 14:30:23 -0500
+
+
+Started GET "/assets/aboutDiag.png" for 127.0.0.1 at 2014-01-26 14:30:23 -0500
+
+
+Started GET "/images/concept.png" for 127.0.0.1 at 2014-01-26 14:30:23 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/concept.png"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (58.3ms)
+
+
+Started GET "/images/squared_metal.png" for 127.0.0.1 at 2014-01-26 14:30:23 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/squared_metal.png"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (49.3ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-01-26 14:30:56 -0500
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:30:57 -0500
+
+
+Started GET "/assets/aboutscript.js" for 127.0.0.1 at 2014-01-26 14:30:57 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:30:57 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:30:57 -0500
+
+
+Started GET "/assets/matcheffects.js" for 127.0.0.1 at 2014-01-26 14:30:57 -0500
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:30:57 -0500
+
+
+Started GET "/assets/adrian.jpg" for 127.0.0.1 at 2014-01-26 14:30:57 -0500
+
+
+Started GET "/images/concept.png" for 127.0.0.1 at 2014-01-26 14:30:57 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/concept.png"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (69.0ms)
+
+
+Started GET "/assets/aboutDiag.png" for 127.0.0.1 at 2014-01-26 14:30:57 -0500
+
+
+Started GET "/images/squared_metal.png" for 127.0.0.1 at 2014-01-26 14:30:57 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/squared_metal.png"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (72.8ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2014-01-26 14:31:00 -0500
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (50.0ms)
+Completed 200 OK in 55ms (Views: 54.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:31:00 -0500
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:31:01 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:31:01 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:31:01 -0500
+
+
+Started GET "/assets/contactscript.js" for 127.0.0.1 at 2014-01-26 14:31:01 -0500
+
+
+Started GET "/images/squared_metal.png" for 127.0.0.1 at 2014-01-26 14:31:01 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/squared_metal.png"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (55.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-26 14:31:13 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:31:13 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:31:13 -0500
+
+
+Started GET "/assets/indexscript.js" for 127.0.0.1 at 2014-01-26 14:31:13 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:31:13 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:31:13 -0500
+
+
+Started GET "/images/squared_metal.png" for 127.0.0.1 at 2014-01-26 14:31:13 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/squared_metal.png"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (39.5ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2014-01-26 14:31:15 -0500
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 34ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:31:16 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:31:16 -0500
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:31:16 -0500
+
+
+Started GET "/assets/contactscript.js" for 127.0.0.1 at 2014-01-26 14:31:16 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:31:16 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-26 14:31:18 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:31:18 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:31:18 -0500
+
+
+Started GET "/assets/indexscript.js" for 127.0.0.1 at 2014-01-26 14:31:18 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:31:18 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:31:19 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-01-26 14:31:28 -0500
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html (69.7ms)
+  Rendered users/new.html.erb within layouts/application (85.6ms)
+Completed 200 OK in 125ms (Views: 90.9ms | ActiveRecord: 29.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:31:28 -0500
+
+
+Started GET "/assets/indexscript.js" for 127.0.0.1 at 2014-01-26 14:31:28 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:31:28 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:31:28 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:31:28 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-01-26 14:32:17 -0500
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html (0.3ms)
+  Rendered users/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/indexscript.js" for 127.0.0.1 at 2014-01-26 14:32:17 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:32:17 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:32:17 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:32:17 -0500
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:32:17 -0500
+
+
+Started GET "/say_bot?msg=hello&cat=first" for 127.0.0.1 at 2014-01-26 14:32:20 -0500
+
+Errno::ENOENT (No such file or directory - connect(2)):
+  lib/bot_daemon.rb:4:in `<module:BotDaemon>'
+  lib/bot_daemon.rb:3:in `<top (required)>'
+  app/controllers/bot_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.3ms)
+
+
+Started GET "/say_bot?msg=blah&cat=first" for 127.0.0.1 at 2014-01-26 14:32:22 -0500
+
+Errno::ENOENT (No such file or directory - connect(2)):
+  lib/bot_daemon.rb:4:in `<module:BotDaemon>'
+  lib/bot_daemon.rb:3:in `<top (required)>'
+  app/controllers/bot_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.0ms)
+
+
+Started GET "/users/" for 127.0.0.1 at 2014-01-26 14:32:28 -0500
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:32:28 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:32:28 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:32:28 -0500
+
+
+Started POST "/users" for 127.0.0.1 at 2014-01-26 14:32:49 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6Imx7OGTklSxUum6XVntnE9QsSDc14295D03YWwU9qo=", "user"=>{"email"=>"rita@example.com", "freqs"=>"{\"the\":8,\"night\":5,\"lol\":1}", "avg_length"=>"23", "total_words"=>"222"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('rita@example.com') LIMIT 1
+  [1m[36mSQL (53.9ms)[0m  [1mINSERT INTO "users" ("avg_length", "created_at", "email", "freqs", "total_words", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["avg_length", 23.0], ["created_at", Sun, 26 Jan 2014 19:32:50 UTC +00:00], ["email", "rita@example.com"], ["freqs", "{\"the\":8,\"night\":5,\"lol\":1}"], ["total_words", 222], ["updated_at", Sun, 26 Jan 2014 19:32:50 UTC +00:00]]
+  [1m[35m (5.3ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/users/1
+Completed 302 Found in 167ms (ActiveRecord: 59.6ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-01-26 14:32:50 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 11ms (Views: 6.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:32:50 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:32:50 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:32:50 -0500
+
+
+Started GET "/users/" for 127.0.0.1 at 2014-01-26 14:33:08 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 16ms (Views: 10.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:33:08 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:33:08 -0500
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:33:08 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-01-26 14:34:11 -0500
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html (0.1ms)
+  Rendered users/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:34:11 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:34:11 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:34:11 -0500
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:34:11 -0500
+
+
+Started GET "/assets/indexscript.js" for 127.0.0.1 at 2014-01-26 14:34:11 -0500
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-01-26 14:35:03 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:35:03 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:35:03 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:35:03 -0500
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-01-26 14:38:57 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/show.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error ('[1, 0.06306306306306306, "rita@example.com", "default snippet"]' is not an ActiveModel-compatible object. It must implement :to_partial_path.):
+    14: <div>
+    15:   <table class="matches">
+    16:     <tr>
+    17:       <%= render @matches %>
+    18:     </tr>
+    19:   </table>
+    20: </div>
+  app/views/users/show.html.erb:17:in `_app_views_users_show_html_erb__3606446998594031363_2171489400'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (27.1ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-01-26 14:39:35 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/show.html.erb within layouts/application (92.4ms)
+Completed 500 Internal Server Error in 100ms
+
+ActionView::Template::Error ('[1, 0.06306306306306306, "rita@example.com", "default snippet"]' is not an ActiveModel-compatible object. It must implement :to_partial_path.):
+    15:   <table class="matches">
+    16:     <tr>
+    17:       <ol class="matches">
+    18:       <%= render @matches %>
+    19:       </ol>
+    20:     </tr>
+    21:   </table>
+  app/views/users/show.html.erb:18:in `_app_views_users_show_html_erb__3606446998594031363_2179621680'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.1ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-01-26 14:39:36 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/show.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error ('[1, 0.06306306306306306, "rita@example.com", "default snippet"]' is not an ActiveModel-compatible object. It must implement :to_partial_path.):
+    15:   <table class="matches">
+    16:     <tr>
+    17:       <ol class="matches">
+    18:       <%= render @matches %>
+    19:       </ol>
+    20:     </tr>
+    21:   </table>
+  app/views/users/show.html.erb:18:in `_app_views_users_show_html_erb__3606446998594031363_2179621680'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-01-26 14:41:14 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/_match.html.erb (0.4ms)
+  Rendered users/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:41:14 -0500
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:41:14 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:41:14 -0500
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-01-26 14:41:56 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/_match.html.erb (0.8ms)
+  Rendered users/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 16ms (Views: 12.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:41:56 -0500
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:41:56 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:41:56 -0500
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-01-26 14:42:04 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/_match.html.erb (0.1ms)
+  Rendered users/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 12ms (Views: 7.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:42:04 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:42:04 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:42:04 -0500
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-01-26 14:42:05 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/_match.html.erb (0.6ms)
+  Rendered users/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:42:05 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:42:05 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:42:05 -0500
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-01-26 14:42:21 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/_match.html.erb (0.1ms)
+  Rendered users/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 11ms (Views: 7.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:42:21 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:42:21 -0500
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:42:21 -0500
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-01-26 14:42:56 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/_match.html.erb (0.6ms)
+  Rendered users/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:42:56 -0500
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:42:56 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:42:56 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-26 14:43:00 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:43:00 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:43:00 -0500
+
+
+Started GET "/assets/indexscript.js" for 127.0.0.1 at 2014-01-26 14:43:00 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:43:00 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:43:00 -0500
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-01-26 14:45:09 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/_match.html.erb (0.1ms)
+  Rendered users/show.html.erb within layouts/application (141.6ms)
+Completed 200 OK in 166ms (Views: 163.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:45:09 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:45:09 -0500
+
+
+Started GET "/assets/matchscript.js" for 127.0.0.1 at 2014-01-26 14:45:09 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:45:09 -0500
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-01-26 14:46:15 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/_match.html.erb (0.1ms)
+  Rendered users/show.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 35ms (Views: 32.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:46:15 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:46:15 -0500
+
+
+Started GET "/assets/matchscript.js" for 127.0.0.1 at 2014-01-26 14:46:15 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:46:15 -0500
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-01-26 14:46:20 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/_match.html.erb (0.1ms)
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:46:20 -0500
+
+
+Started GET "/assets/matchscript.js" for 127.0.0.1 at 2014-01-26 14:46:20 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:46:20 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:46:20 -0500
+
+
+Started GET "/about" for 127.0.0.1 at 2014-01-26 14:49:40 -0500
+Processing by StaticPagesController#about as HTML
+ERROR: compiling _app_views_static_pages_about_html_erb__1864944564767740585_2169989300 RAISED /Users/ritazevallos/Projects/matchbot-plus/matchbot-plusplus/app/views/static_pages/about.html.erb:65: syntax error, unexpected tIDENTIFIER, expecting ')'
+...nd=( image_tag "concept.png" id: "concept");@output_buffer.s...
+...                               ^
+Function body:           def _app_views_static_pages_about_html_erb__1864944564767740585_2169989300(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "static_pages/about";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.append=( javascript_include_tag "aboutscript.js" );@output_buffer.safe_append='
+';@output_buffer.append=( javascript_include_tag "chatwindow.js" );@output_buffer.safe_append='
+';@output_buffer.append=( javascript_include_tag "matcheffects.js" );@output_buffer.safe_append='
+
+			<table class="aboutTable">
+				<tr>
+					<td> <!-- Sam -->
+						<div class="email"></div>
+						<div class="bar">
+							<div class="percentage"></div>
+						</div>
+					
+						<div><img src="https://lh4.googleusercontent.com/-9GSmbQ6EkVQ/AAAAAAAAAAI/AAAAAAAABAI/pUxy8K8gbO4/photo.jpg" id="face"/></div>
+						
+						<div class="aboutus"></div>
+					</td>
+					<td> <!-- Stella -->
+						<div class="email"></div>
+						<div class="bar">
+							<div class="percentage"></div>
+						</div>
+					
+						<div><img src="http://cs.swarthmore.edu/~scho1/images/myFace.jpg" id="face"/></div>
+						
+						<div class="aboutus"></div>
+					</td>
+					<td> <!-- Luis -->
+						<div class="email"></div>
+						<div class="bar">
+							<div class="percentage"></div>
+						</div>
+					
+						<div><img src="http://penguinsanddaemons.files.wordpress.com/2013/12/headshot.png" id="face"/></div>
+						
+						<div class="aboutus"></div>
+					</td>
+				</tr>
+				<tr>
+					<td> <!-- Rita -->
+						<div class="email"></div>
+						<div class="bar">
+							<div class="percentage"></div>
+						</div>
+					
+						<div><img src="https://lh4.googleusercontent.com/-iskBUpcN7JA/AAAAAAAAAAI/AAAAAAAAACA/1NAlfAkj-fc/photo.jpg" id="face"/></div>
+						
+						<div class="aboutus"></div>
+					</td>
+					<td> <!-- Adrian -->
+						<div class="email"></div>
+						<div class="bar">
+							<div class="percentage"></div>
+						</div>
+					    <!--
+						<div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWZlGuoNtPqRgKKXosqedZQupIGbbS1htzahPXLnpYw19pove4" id="face"/></div>
+						-->
+                        <div>';@output_buffer.append=( image_tag "adrian.jpg", id: "face");@output_buffer.safe_append='</div>
+						
+						<div class="aboutus"></div>
+					</td>					
+				</tr>
+			</table>
+		</div>
+	<div><br><br></div>
+	<div>';@output_buffer.append=( image_tag "concept.png" id: "concept");@output_buffer.safe_append='</div>
+    <h1>Research</h1>
+    <div class="chatwindow"></div>
+    <h1>Product Flow</h1>
+	<div>
+		';@output_buffer.append=( image_tag "aboutDiag.png", id: "diag" );@output_buffer.safe_append='
+	</div>
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `module_eval'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `compile'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_view/template.rb:248:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `compile!'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_view/template.rb:142:in `block in render'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/notifications.rb:161:in `instrument'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_view/template.rb:141:in `render'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:23:in `render'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:97:in `render'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:16:in `render'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:189:in `process_action'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:403:in `_run__775847341175491171__process_action__callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:136:in `process'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:44:in `process'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal.rb:195:in `dispatch'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_controller/metal.rb:231:in `block in action'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:680:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-4.0.2/lib/active_record/query_cache.rb:36:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-4.0.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-4.0.2/lib/active_record/migration.rb:369:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:373:in `_run__3686946468998940738__call__callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/railties-4.0.2/lib/rails/rack/logger.rb:38:in `call_app'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `block in call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:25:in `tagged'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `tagged'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-4.0.2/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/static.rb:64:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/railties-4.0.2/lib/rails/engine.rb:511:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/railties-4.0.2/lib/rails/application.rb:97:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/usr/local/rvm/gems/ruby-1.9.3-p392/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered static_pages/about.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (/Users/ritazevallos/Projects/matchbot-plus/matchbot-plusplus/app/views/static_pages/about.html.erb:65: syntax error, unexpected tIDENTIFIER, expecting ')'
+...nd=( image_tag "concept.png" id: "concept");@output_buffer.s...
+...                               ^):
+    62: 			</table>
+    63: 		</div>
+    64: 	<div><br><br></div>
+    65: 	<div><%= image_tag "concept.png" id: "concept"%></div>
+    66:     <h1>Research</h1>
+    67:     <div class="chatwindow"></div>
+    68:     <h1>Product Flow</h1>
+  actionpack (4.0.2) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.2) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.2) lib/action_view/template.rb:248:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionpack (4.0.2) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.2) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.2) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.2) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__775847341175491171__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3686946468998940738__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-01-26 14:49:52 -0500
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (42.6ms)
+Completed 200 OK in 50ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:49:52 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:49:52 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:49:52 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:49:52 -0500
+
+
+Started GET "/assets/aboutscript.js" for 127.0.0.1 at 2014-01-26 14:49:52 -0500
+
+
+Started GET "/assets/matcheffects.js" for 127.0.0.1 at 2014-01-26 14:49:52 -0500
+
+
+Started GET "/assets/adrian.jpg" for 127.0.0.1 at 2014-01-26 14:49:52 -0500
+
+
+Started GET "/assets/aboutDiag.png" for 127.0.0.1 at 2014-01-26 14:49:52 -0500
+
+
+Started GET "/assets/concept.png" for 127.0.0.1 at 2014-01-26 14:49:52 -0500
+
+
+Started GET "/contact" for 127.0.0.1 at 2014-01-26 14:50:06 -0500
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:50:06 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:50:06 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:50:06 -0500
+
+
+Started GET "/assets/contactscript.js" for 127.0.0.1 at 2014-01-26 14:50:06 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:50:06 -0500
+
+
+Started GET "/about" for 127.0.0.1 at 2014-01-26 14:50:09 -0500
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:50:09 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:50:09 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:50:09 -0500
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:50:09 -0500
+
+
+Started GET "/assets/matcheffects.js" for 127.0.0.1 at 2014-01-26 14:50:09 -0500
+
+
+Started GET "/assets/aboutscript.js" for 127.0.0.1 at 2014-01-26 14:50:09 -0500
+
+
+Started GET "/assets/adrian.jpg" for 127.0.0.1 at 2014-01-26 14:50:09 -0500
+
+
+Started GET "/assets/concept.png" for 127.0.0.1 at 2014-01-26 14:50:09 -0500
+
+
+Started GET "/assets/aboutDiag.png" for 127.0.0.1 at 2014-01-26 14:50:09 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-26 14:51:12 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (64.9ms)
+Completed 200 OK in 70ms (Views: 69.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:51:12 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:51:12 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:51:12 -0500
+
+
+Started GET "/assets/indexscript.js" for 127.0.0.1 at 2014-01-26 14:51:12 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:51:12 -0500
+
+
+Started GET "/images/squared_metal.png" for 127.0.0.1 at 2014-01-26 14:51:12 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/squared_metal.png"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (67.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-01-26 14:51:22 -0500
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:51:22 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:51:22 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:51:22 -0500
+
+
+Started GET "/images/squared_metal.png" for 127.0.0.1 at 2014-01-26 14:51:22 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/squared_metal.png"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (36.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-26 14:53:17 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:53:17 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:53:17 -0500
+
+
+Started GET "/assets/indexscript.js" for 127.0.0.1 at 2014-01-26 14:53:17 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:53:17 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:53:17 -0500
+
+
+Started GET "/images/squared_metal.png" for 127.0.0.1 at 2014-01-26 14:53:17 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/squared_metal.png"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (36.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-26 14:53:19 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:53:19 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:53:19 -0500
+
+
+Started GET "/assets/indexscript.js" for 127.0.0.1 at 2014-01-26 14:53:19 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:53:19 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:53:19 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-26 14:53:19 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:53:20 -0500
+
+
+Started GET "/assets/indexscript.js" for 127.0.0.1 at 2014-01-26 14:53:20 -0500
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:53:20 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:53:20 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:53:20 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-26 14:53:25 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:53:25 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:53:25 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:53:25 -0500
+
+
+Started GET "/assets/indexscript.js" for 127.0.0.1 at 2014-01-26 14:53:25 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:53:25 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-26 14:54:09 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 91ms (Views: 90.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/indexscript.js" for 127.0.0.1 at 2014-01-26 14:54:09 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:54:09 -0500
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:54:09 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:54:09 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:54:09 -0500
+
+
+Started GET "/images/squared_metal.png" for 127.0.0.1 at 2014-01-26 14:54:09 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/squared_metal.png"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (58.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-26 14:54:26 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 78ms (Views: 77.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:54:26 -0500
+
+
+Started GET "/assets/indexscript.js" for 127.0.0.1 at 2014-01-26 14:54:27 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:54:27 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:54:27 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:54:27 -0500
+
+
+Started GET "/images/squared_metal.png" for 127.0.0.1 at 2014-01-26 14:54:27 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/squared_metal.png"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (52.6ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-01-26 14:57:01 -0500
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html (0.1ms)
+  Rendered users/new.html.erb within layouts/application (26.7ms)
+Completed 200 OK in 40ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:57:01 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:57:01 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:57:01 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:57:01 -0500
+
+
+Started GET "/assets/indexscript.js" for 127.0.0.1 at 2014-01-26 14:57:01 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-01-26 14:59:50 -0500
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html (0.1ms)
+  Rendered users/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 14:59:50 -0500
+
+
+Started GET "/assets/indexscript.js" for 127.0.0.1 at 2014-01-26 14:59:50 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 14:59:50 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 14:59:50 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 14:59:51 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-01-26 15:00:43 -0500
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html (0.0ms)
+  Rendered users/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 12ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 15:00:44 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 15:00:44 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 15:00:44 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 15:00:44 -0500
+
+
+Started GET "/assets/indexscript.js" for 127.0.0.1 at 2014-01-26 15:00:44 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-01-26 15:00:45 -0500
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html (0.1ms)
+  Rendered users/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 15:00:45 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 15:00:45 -0500
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 15:00:45 -0500
+
+
+Started GET "/assets/indexscript.js" for 127.0.0.1 at 2014-01-26 15:00:45 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 15:00:45 -0500
+
+
+Started GET "/users" for 127.0.0.1 at 2014-01-26 15:00:48 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (39.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (40.5ms)
+Completed 200 OK in 47ms (Views: 7.6ms | ActiveRecord: 39.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 15:00:48 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 15:00:48 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 15:00:48 -0500
+
+
+Started GET "/users" for 127.0.0.1 at 2014-01-26 15:01:41 -0500
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 15:01:41 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 15:01:41 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 15:01:41 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-01-26 15:01:44 -0500
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html (0.1ms)
+  Rendered users/new.html.erb within layouts/application (185.5ms)
+Completed 200 OK in 192ms (Views: 191.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 15:01:44 -0500
+
+
+Started GET "/assets/indexscript.js" for 127.0.0.1 at 2014-01-26 15:01:44 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 15:01:44 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 15:01:44 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 15:01:44 -0500
+
+
+Started POST "/users" for 127.0.0.1 at 2014-01-26 15:01:58 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6Imx7OGTklSxUum6XVntnE9QsSDc14295D03YWwU9qo=", "user"=>{"email"=>"rita2@example.com", "freqs"=>"{\"the\":8,\"night\":5,\"lol\":1}", "avg_length"=>"20.9", "total_words"=>"31287"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (12.1ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('rita2@example.com') LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("avg_length", "created_at", "email", "freqs", "total_words", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["avg_length", 20.9], ["created_at", Sun, 26 Jan 2014 20:01:58 UTC +00:00], ["email", "rita2@example.com"], ["freqs", "{\"the\":8,\"night\":5,\"lol\":1}"], ["total_words", 31287], ["updated_at", Sun, 26 Jan 2014 20:01:58 UTC +00:00]]
+  [1m[35m (5.0ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/users/2
+Completed 302 Found in 108ms (ActiveRecord: 18.0ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2014-01-26 15:01:58 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/_match.html.erb (0.1ms)
+  Rendered users/_match.html.erb (0.1ms)
+  Rendered users/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 15:01:59 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 15:01:59 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 15:01:59 -0500
+
+
+Started GET "/assets/matchscript.js" for 127.0.0.1 at 2014-01-26 15:01:59 -0500
+
+
+Started GET "/users/2" for 127.0.0.1 at 2014-01-26 15:02:11 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/_match.html.erb (0.1ms)
+  Rendered users/_match.html.erb (0.1ms)
+  Rendered users/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 15:02:11 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 15:02:11 -0500
+
+
+Started GET "/assets/matchscript.js" for 127.0.0.1 at 2014-01-26 15:02:11 -0500
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 15:02:11 -0500
+
+
+Started GET "/users/2" for 127.0.0.1 at 2014-01-26 15:02:35 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/_match.html.erb (1.1ms)
+  Rendered users/_match.html.erb (0.4ms)
+  Rendered users/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 37ms (Views: 24.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 15:02:35 -0500
+
+
+Started GET "/assets/matchscript.js" for 127.0.0.1 at 2014-01-26 15:02:35 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 15:02:35 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 15:02:35 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-01-26 15:02:42 -0500
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html (0.2ms)
+  Rendered users/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 15:02:42 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 15:02:42 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 15:02:42 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 15:02:42 -0500
+
+
+Started GET "/assets/indexscript.js" for 127.0.0.1 at 2014-01-26 15:02:42 -0500
+
+
+Started POST "/users" for 127.0.0.1 at 2014-01-26 15:02:56 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6Imx7OGTklSxUum6XVntnE9QsSDc14295D03YWwU9qo=", "user"=>{"email"=>"test@example.com", "freqs"=>"{\"the\":8,\"night\":5,\"lol\":1}", "avg_length"=>"20.3", "total_words"=>"222"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('test@example.com') LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("avg_length", "created_at", "email", "freqs", "total_words", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["avg_length", 20.3], ["created_at", Sun, 26 Jan 2014 20:02:56 UTC +00:00], ["email", "test@example.com"], ["freqs", "{\"the\":8,\"night\":5,\"lol\":1}"], ["total_words", 222], ["updated_at", Sun, 26 Jan 2014 20:02:56 UTC +00:00]]
+  [1m[35m (27.6ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/users/3
+Completed 302 Found in 34ms (ActiveRecord: 28.7ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2014-01-26 15:02:56 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/_match.html.erb (0.1ms)
+  Rendered users/_match.html.erb (0.1ms)
+  Rendered users/_match.html.erb (0.1ms)
+  Rendered users/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 15:02:56 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 15:02:56 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 15:02:56 -0500
+
+
+Started GET "/assets/matchscript.js" for 127.0.0.1 at 2014-01-26 15:02:56 -0500
+
+
+Started GET "/users/3" for 127.0.0.1 at 2014-01-26 15:03:30 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/_match.html.erb (0.1ms)
+  Rendered users/_match.html.erb (0.1ms)
+  Rendered users/_match.html.erb (0.1ms)
+  Rendered users/show.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 15:03:30 -0500
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 15:03:30 -0500
+
+
+Started GET "/assets/matchscript.js" for 127.0.0.1 at 2014-01-26 15:03:30 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 15:03:30 -0500
+
+
+Started GET "/users/3" for 127.0.0.1 at 2014-01-26 15:03:32 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/_match.html.erb (0.1ms)
+  Rendered users/_match.html.erb (0.1ms)
+  Rendered users/_match.html.erb (0.1ms)
+  Rendered users/show.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 15:03:33 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 15:03:33 -0500
+
+
+Started GET "/assets/matchscript.js" for 127.0.0.1 at 2014-01-26 15:03:33 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 15:03:33 -0500
+
+
+Started GET "/users/3" for 127.0.0.1 at 2014-01-26 15:06:04 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/_match.html.erb (0.1ms)
+  Rendered users/_match.html.erb (0.1ms)
+  Rendered users/_match.html.erb (0.1ms)
+  Rendered users/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 80ms (Views: 11.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 15:06:05 -0500
+
+
+Started GET "/assets/matchscript.js" for 127.0.0.1 at 2014-01-26 15:06:05 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 15:06:05 -0500
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 15:06:05 -0500
+
+
+Started GET "/users/3" for 127.0.0.1 at 2014-01-26 15:06:06 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/_match.html.erb (0.5ms)
+  Rendered users/_match.html.erb (0.1ms)
+  Rendered users/_match.html.erb (0.1ms)
+  Rendered users/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 14ms (Views: 11.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 15:06:06 -0500
+
+
+Started GET "/assets/matchscript.js" for 127.0.0.1 at 2014-01-26 15:06:06 -0500
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 15:06:06 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 15:06:06 -0500
+
+
+Started GET "/users/3" for 127.0.0.1 at 2014-01-26 15:07:23 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/_match.html.erb (0.4ms)
+  Rendered users/_match.html.erb (0.1ms)
+  Rendered users/_match.html.erb (0.1ms)
+  Rendered users/show.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 39ms (Views: 15.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 15:07:23 -0500
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 15:07:23 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 15:07:23 -0500
+
+
+Started GET "/assets/matchscript.js" for 127.0.0.1 at 2014-01-26 15:07:23 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-26 15:18:00 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (101.5ms)
+Completed 200 OK in 108ms (Views: 107.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 15:18:00 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 15:18:00 -0500
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 15:18:00 -0500
+
+
+Started GET "/assets/indexscript.js" for 127.0.0.1 at 2014-01-26 15:18:00 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 15:18:00 -0500
+
+
+Started GET "/say_bot?msg=hello&cat=first" for 127.0.0.1 at 2014-01-26 15:18:03 -0500
+
+Errno::ENOENT (No such file or directory - connect(2)):
+  lib/bot_daemon.rb:4:in `<module:BotDaemon>'
+  lib/bot_daemon.rb:3:in `<top (required)>'
+  app/controllers/bot_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.6ms)
+
+
+Started GET "/say_bot?msg=yes&cat=first" for 127.0.0.1 at 2014-01-26 15:18:03 -0500
+
+Errno::ENOENT (No such file or directory - connect(2)):
+  lib/bot_daemon.rb:4:in `<module:BotDaemon>'
+  lib/bot_daemon.rb:3:in `<top (required)>'
+  app/controllers/bot_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (86.4ms)
+
+
+Started GET "/say_bot?msg=rita%40example.com&cat=email" for 127.0.0.1 at 2014-01-26 15:18:10 -0500
+
+Errno::ENOENT (No such file or directory - connect(2)):
+  lib/bot_daemon.rb:4:in `<module:BotDaemon>'
+  lib/bot_daemon.rb:3:in `<top (required)>'
+  app/controllers/bot_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-26 15:19:08 -0500
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html (0.8ms)
+  Rendered users/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 83ms (Views: 44.2ms | ActiveRecord: 23.3ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-01-26 15:19:09 -0500
+
+
+Started GET "/assets/chatwindow.js" for 127.0.0.1 at 2014-01-26 15:19:09 -0500
+
+
+Started GET "/assets/indexscript.js" for 127.0.0.1 at 2014-01-26 15:19:09 -0500
+
+
+Started GET "/assets/matchbotlogo.png" for 127.0.0.1 at 2014-01-26 15:19:09 -0500
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-01-26 15:19:09 -0500
+
+
+Started GET "/say_bot?msg=hey&cat=first" for 127.0.0.1 at 2014-01-26 15:19:11 -0500
+
+Errno::ENOENT (No such file or directory - connect(2)):
+  lib/bot_daemon.rb:4:in `<module:BotDaemon>'
+  lib/bot_daemon.rb:3:in `<top (required)>'
+  app/controllers/bot_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.8ms)
+
+
+Started GET "/say_bot?msg=there&cat=first" for 127.0.0.1 at 2014-01-26 15:19:12 -0500
+
+Errno::ENOENT (No such file or directory - connect(2)):
+  lib/bot_daemon.rb:4:in `<module:BotDaemon>'
+  lib/bot_daemon.rb:3:in `<top (required)>'
+  app/controllers/bot_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.0ms)
+
+
+Started GET "/say_bot?msg=we&cat=first" for 127.0.0.1 at 2014-01-26 15:19:13 -0500
+
+Errno::ENOENT (No such file or directory - connect(2)):
+  lib/bot_daemon.rb:4:in `<module:BotDaemon>'
+  lib/bot_daemon.rb:3:in `<top (required)>'
+  app/controllers/bot_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (25.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (46.6ms)
+
+
+Started GET "/say_bot?msg=rita%40example.com&cat=email" for 127.0.0.1 at 2014-01-26 15:19:18 -0500
+
+Errno::ENOENT (No such file or directory - connect(2)):
+  lib/bot_daemon.rb:4:in `<module:BotDaemon>'
+  lib/bot_daemon.rb:3:in `<top (required)>'
+  app/controllers/bot_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.6ms)

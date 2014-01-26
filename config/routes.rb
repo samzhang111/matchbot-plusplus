@@ -2,7 +2,7 @@ Matchbot::Application.routes.draw do
   get "response/create"
   get "response/destroy"
   resources :users
-  root 'static_pages#home'
+  root 'users#new'
   match '/contact', to: 'static_pages#contact', via: 'get'
   match '/about', to: 'static_pages#about', via: 'get'
   match '/matches', to: 'static_pages#matches', via: 'get'
