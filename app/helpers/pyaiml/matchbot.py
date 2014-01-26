@@ -15,8 +15,7 @@ import dbus.service
 from dbus.mainloop.qt import DBusQtMainLoop
 import aiml
 import sys
-from redis import Redis
-from hotqueue import HotQueue
+import pickle
 
 # Create a Kernel object.
 kern = aiml.Kernel()
@@ -53,7 +52,7 @@ questions.append("how much money do you have in the bank?")
 questions.append("what are your first and second favorite animals?")
 questions.append("you are in a jungle, hat does that jungle look like?")
 questions.append("you are in a room with white walls, what are you doing?")
-questions.append("what is ONE THING that you HAVE to know about someone who you are trying to bone?")
+questions.append("what is ONE THING that you HAVE to know about someone before you get serious with them?")
 answers = []
 
 i = 2
@@ -71,36 +70,58 @@ i = 2
 class Calculator(dbus.service.Object):
   def __init__(self):
     self.sessions = dict();
+    self.QSpacing = 5
     busName = dbus.service.BusName('com.chatbot.Chatbot', bus = dbus.SessionBus())
     dbus.service.Object.__init__(self, busName, '/Chatbot')
+
+  def inc_session(self, session_id):
+    self.sessions[session_id]["counter"] +=1
+    return self.sessions[session_id]["counter"]
+
+  def create_session(self, session_id):
+    if session_id in self.sessions: pass
+    else:
+       self.sessions[session_id] = dict()
+       self.sessions[session_id]["counter"] = 2
+       self.sessions[session_id]["answers"] = dict()
+    return
+
+  @dbus.service.method('com.chatbot.Chatbot', in_signature = 'x', out_signature = 's')
+  def set_spacing(self, a):
+    self.QSpacing = a
+    return "set question spacing"
+
+  @dbus.service.method('com.chatbot.Chatbot', in_signature = 'x', out_signature = 's')
+  def remove_session(self, session_id):
+    if session_id in self.sessions:
+        del self.sessions[session_id]
+        return "deleted successfully"
+    else:
+        return "session not found"
  
-  @dbus.service.method('org.documentroot.Chatbot', in_signature = 'sx', out_signature = 's')
+  @dbus.service.method('com.chatbot.Chatbot', in_signature = 'sx', out_signature = 's')
   def chat(self, a, session_id):
-    if session_id not in self.sessions:
-      self.sessions[session_id] =[2,[]]
-    self.sessions[session_id][0] += 1
-    i = self.sessions[session_id][0]
-    if (i%5 == 0):
-        return(questions[i/5])
-    elif (i%5 == 1):
-       self.sessions[session_id][1].append(a)
-    return kern.respond(a)
+    a = str(a)
+    self.create_session(session_id)
+    i = self.inc_session(session_id)
+    if (i/self.QSpacing < len(questions)):
+      if (i%self.QSpacing == 0):
+        return(questions[i/self.QSpacing])
+      elif (i%self.QSpacing == 1):
+       self.sessions[session_id]["answers"][questions[(i-1)/self.QSpacing]] = a
+    response = kern.respond(a, session_id)
+    return response
   
-  @dbus.service.method('org.documentroot.Calculator', in_signature = 'x', out_signature = 's')
+  @dbus.service.method('com.chatbot.Chatbot', in_signature = 'x', out_signature = 's')
   def get_answers(self, session_id):
+    print type(self.sessions[session_id]["answers"])
+    values = self.sessions[session_id]["answers"]
     retval = ""
-    for item in self.sessions[session_id][1]:
-      retval += item
-      retval += "|"
-    retval.rstrip("|")
+    for key in values:
+        retval += key + "||" + values[key] + "\n"
+    print retval
     return retval
-  """
-  @dbus.service.method('org.documentroot.Calculator', in_signature = 'd', out_signature = 'd')
-  def sqrt(self, n): return math.sqrt(n)
- 
-  @dbus.service.method('org.documentroot.Calculator', in_signature = 'd', out_signature = 'i')
-  def round(self, n): return round(n)
-  """
+
 DBusQtMainLoop(set_as_default = True)
 app = QCoreApplication([])
 calc = Calculator()
