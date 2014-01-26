@@ -31,6 +31,10 @@ li {
 	border-radius: 5px;
 }
 
+.prompt tr td:first-child {
+	width: 3em;
+}
+
 input {
 	width: 95%;
 	border: 0px solid white;
@@ -65,13 +69,14 @@ input {
 	vertical-align: top;
 	border: 4px solid #3780cf;
 	background-color: #68a4e7;
+	cursor: pointer;
 }
 
 .aboutTable {
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
 	table-layout: fixed;
-	border-spacing: 3em;
+	border-spacing: 2em;
 }
 
 .aboutTable td {
@@ -132,15 +137,16 @@ input {
 
 #meet {
 	width: 50%;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 15px;
+	margin-bottom: 0px;
 }
 
 #diag {
-	width: 40%;
+	width: 50%;
 	margin-top: 10px;
-	background-color: rgba(255,255,255,0.5);
-	
+	background-color: rgba(255,255,255,0.1);
+	border: 2px solid grey;
+	border-radius: 5px;
 }
 
 #face {

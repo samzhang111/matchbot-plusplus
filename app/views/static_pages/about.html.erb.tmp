@@ -1,13 +1,8 @@
-<%= javascript_include_tag "aboutscript.js" %>
-<%= javascript_include_tag "chatwindow.js" %>
-<%= javascript_include_tag "matcheffects.js" %>
-
 	<div>
 		<img src="images/aboutTitle.png" id="meet"/>
 			<table class="aboutTable">
 				<tr>
 					<td> <!-- Sam -->
-						<div class="email"></div>
 						<div class="bar">
 							<div class="percentage"></div>
 						</div>
@@ -17,7 +12,6 @@
 						<div class="aboutus"></div>
 					</td>
 					<td> <!-- Stella -->
-						<div class="email"></div>
 						<div class="bar">
 							<div class="percentage"></div>
 						</div>
@@ -27,7 +21,6 @@
 						<div class="aboutus"></div>
 					</td>
 					<td> <!-- Luis -->
-						<div class="email"></div>
 						<div class="bar">
 							<div class="percentage"></div>
 						</div>
@@ -39,7 +32,6 @@
 				</tr>
 				<tr>
 					<td> <!-- Rita -->
-						<div class="email"></div>
 						<div class="bar">
 							<div class="percentage"></div>
 						</div>
@@ -49,14 +41,13 @@
 						<div class="aboutus"></div>
 					</td>
 					<td> <!-- Adrian -->
-						<div class="email"></div>
 						<div class="bar">
 							<div class="percentage"></div>
 						</div>
 					    <!--
 						<div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWZlGuoNtPqRgKKXosqedZQupIGbbS1htzahPXLnpYw19pove4" id="face"/></div>
 						-->
-                        <div><%= image_tag "adrian.jpg", id: "face"%></div>
+						<div><img src="images/adrian.jpg" id="face"/></div>
 						
 						<div class="aboutus"></div>
 					</td>					
@@ -69,5 +60,5 @@
     <div class="chatwindow"></div>
     <h1>Product Flow</h1>
 	<div>
-		<%= image_tag "aboutDiag.png", id: "diag" %>
+		<img src="images/aboutDiag.png" id="diag"/>
 	</div>
