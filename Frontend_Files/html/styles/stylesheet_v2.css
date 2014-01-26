@@ -1,0 +1,156 @@
+body {
+	text-align: center;
+	background-image: url('../images/squared_metal.png');
+}
+
+span { /*for username display*/
+	font-weight: bold;
+}
+
+div {
+	font-family: calibri, sans-serif;
+}
+
+input {
+	border: 0;
+	border-radius: 7px;
+	width: 100%;
+	padding: 5px;
+
+}
+
+input:focus {
+	outline: none;
+}
+
+li {
+	padding-left: 1em;
+	text-indent: -1em;
+	line-height: 1.5em;
+}
+
+.prompt {
+	width: 100%;
+	word-wrap: break-word;
+}
+
+.chatwindow {
+	width: 50%;
+	height: 20em;
+	margin: 0 auto;
+	border: 2px solid grey;
+	border-radius: 10px;
+	padding: 8px;
+	line-height: 1.5;
+	text-align: left;
+	background-color: white;
+	overflow-y: auto;
+	overflow-x: none;
+	font-family: calibri, serif;
+}
+
+.footer {
+	margin-top: 20px;
+}
+
+td {
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.matches { /* the match table */
+	width: 90%;
+	margin: 0 auto;
+	table-layout: fixed;
+	border-spacing: 1.5em;
+}
+.matches td {
+	padding: 1.5%;
+	vertical-align: top;
+	border: 4px solid #3780cf;
+	background-color: #68a4e7;
+}
+
+.aboutTable {
+	width: 80%;
+	margin: 0 auto;
+	table-layout: fixed;
+	border-spacing: 3em;
+}
+
+.aboutTable td {
+	padding: 1%;
+	vertical-align: top;
+	border: 4px solid #3780cf;
+	background-color: #68a4e7;
+}
+
+.email {
+	font-family: Courier, sans-serif;
+	text-align: left;
+	padding-bottom: 10px;
+	font-weight: bold;
+}
+
+.percentage {
+	width: 0%;
+	background-color: #3780cf;
+
+}
+
+.bar {
+	width: 100%;
+	font-size: .9em;
+	color: white;
+	font-family: calibri, serif;
+	border: 1px solid white;
+	text-align: left;
+	
+}
+
+.snippet {
+	font-size: .9em;
+	width: 85%;
+	text-align: left;
+	margin-left: 10%;
+	line-height: 1.5;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.aboutus {
+	text-align: left;
+	padding: 10px;
+	font-size: .9em;
+
+}
+
+#logo {
+	width: 30%;
+	margin-top: 10px;
+}
+
+#concept {
+	width: 25%;
+}
+
+#meet {
+	width: 50%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#diag {
+	width: 40%;
+	margin-top: 10px;
+	background-color: rgba(255,255,255,0.5);
+	
+}
+
+#face {
+	width: 60%;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
