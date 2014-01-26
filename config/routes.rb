@@ -6,6 +6,7 @@ Matchbot::Application.routes.draw do
   match '/contact', to: 'static_pages#contact', via: 'get'
   match '/about', to: 'static_pages#about', via: 'get'
   match '/matches', to: 'static_pages#matches', via: 'get'
+  match '/say_bot', to: 'bot#say', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
