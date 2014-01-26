@@ -52,7 +52,7 @@ questions.append("how much money do you have in the bank?")
 questions.append("what are your first and second favorite animals?")
 questions.append("you are in a jungle, hat does that jungle look like?")
 questions.append("you are in a room with white walls, what are you doing?")
-questions.append("what is ONE THING that you HAVE to know about someone who you are trying to bone?")
+questions.append("what is ONE THING that you HAVE to know about someone before you get serious with them?")
 answers = []
 
 i = 2
@@ -104,9 +104,10 @@ class Calculator(dbus.service.Object):
     a = str(a)
     self.create_session(session_id)
     i = self.inc_session(session_id)
-    if (i%self.QSpacing == 0):
+    if (i/self.QSpacing < len(questions)):
+      if (i%self.QSpacing == 0):
         return(questions[i/self.QSpacing])
-    elif (i%self.QSpacing == 1):
+      elif (i%self.QSpacing == 1):
        self.sessions[session_id]["answers"][questions[(i-1)/self.QSpacing]] = a
     response = kern.respond(a, session_id)
     return response
