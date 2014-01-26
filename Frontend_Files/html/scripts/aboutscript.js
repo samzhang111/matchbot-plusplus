@@ -33,21 +33,18 @@ $(document).ready(function() {
 		}
 	};
 	var showResearch = function() {
-		chatwindow.sayNoScroll('Sam', 'So, modern dating sites depend on user-generated input to find potential life partners. However, <a href="https://webspace.utexas.edu/pe2929/Eastwick/Ireland2011_PSci.pdf">research</a> suggests that relationship stability is better predicted by language style.');
-		chatwindow.sayNoScroll('Stella', 'NPR actually <a href="http://www.npr.org/blogs/health/2012/04/30/151550273/to-predict-dating-success-the-secrets-in-the-pronouns">covered</a> covered that 2010 article a while back.');
-		chatwindow.sayNoScroll('Luis', 'We thought, \"Maybe we can use a <a href="http://pyaiml.sourceforge.net/">chatbot</a> to get users to talk to us!\"');
-		chatwindow.sayNoScroll('Rita', 'Then using an awesome web framework, we could process their data and find compatible users!');
-		chatwindow.sayNoScroll('Adrian', 'We\'re basing our analysis off of Natural Language Processing research, such as <a href="https://wiki.umn.edu/pub/UmmCSciSeniorSeminar/Spring2012Talks/KaitlynMulcrone.pdf">emotion detection</a>. \
-			The analysis algorithm primarily relies on word frequencies to characterize users.');
-		chatwindow.sayNoScroll('Sam', 'Language-style matching will be the new hot.');
-		chatwindow.sayNoScroll('Stella', 'So what\'re you waiting for? Go get <a href="index.html">matched</a>!');
+		$(".chatwindow").append('<span>Sam: </span>So, modern dating sites depend on user-generated input to find potential life partners. However, <a href="https://webspace.utexas.edu/pe2929/Eastwick/Ireland2011_PSci.pdf">research</a> suggests that relationship stability is better predicted by language style.<br>')
+						.append('<span>Stella: </span>NPR actually <a href="http://www.npr.org/blogs/health/2012/04/30/151550273/to-predict-dating-success-the-secrets-in-the-pronouns">covered</a> that 2010 article a while back.<br>')
+						.append('<span>Luis: </span>We thought, \"Maybe we can use a <a href="http://pyaiml.sourceforge.net/">chatbot</a> to get users to talk to us!\"<br>')
+						.append('<span>Rita: </span>Then using an awesome web framework, we could process their data and find compatible users!<br>')
+						.append('<spanAdrian: </span>We\'re basing our analysis off of Natural Language Processing research, such as <a href="https://wiki.umn.edu/pub/UmmCSciSeniorSeminar/Spring2012Talks/KaitlynMulcrone.pdf">emotion detection</a>. The analysis algorithm primarily relies on word frequencies to characterize users.<br>')
+						.append('<span>Sam: </span>Language-style matching will be the new hot.<br>')
+						.append('<span>Stella: </span>So what\'re you waiting for? Go get <a href="index.html">matched</a>!');
   		
 	};
 
 	addMatches();
 	showResearch();
-
-
 
 	 
 });

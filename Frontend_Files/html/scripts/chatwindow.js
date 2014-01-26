@@ -10,6 +10,10 @@ var chatwindow = {
     email: "",
 
     currenttype: "first",
+    
+    /*init: function() {
+        $(".chatwindow").append("<table class='prompt'><td><tr><span id='prompt'>You :</span></tr><tr><input name='inputtext' placeholder='Type here and enter to send'/></tr></td></table>");
+    },*/
 
     populate_forms: function() {
         // populate a hidden form
@@ -20,24 +24,19 @@ var chatwindow = {
         $("input[name=user[total_words]]").val(chatwindow.statistics.total_words);
         
     },
-
-    sayNoScroll: function(user, userinput) {
-        $(".chatwindow").append("<span>" + user + ": </span>" + userinput + "<br>");
-        $('input[name=inputtext]').val('');
-    },
-
+    
     say: function(user, userinput) {
-        $(".chatwindow").append("<span>" + user + ": </span>" + userinput + "<br>");
+        $(".prompt").before("<span>"+user+": </span>" + userinput + "<br>");
         $(".chatwindow").animate({scrollTop: $('.chatwindow').prop("scrollHeight")}, 500);
         $('input[name=inputtext]').val('');
-    },
-
+    }
     userSays: function(userinput) {
         this.say("You", userinput);
     },
 
     botSays: function(text) {
         this.say("MatchBot", text);
+    }
     },
 
     send_and_get_line: function(userinputobj) {
