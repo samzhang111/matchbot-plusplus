@@ -1,5 +1,11 @@
+include BotDaemon
 class BotController < ApplicationController
     def say
-        render :text => "Huh?"
+        if params.key?(:msg) 
+            response = BotDaemon.send(params[:msg], 0)
+            render :text => response
+        else 
+            render :text => "merp"
+        end
     end
 end

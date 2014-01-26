@@ -66,10 +66,9 @@ var chatwindow = {
         //send statistics to rails
         var received_line = "";
         $.get("/say_bot", line).done(function (data) {
-            console.log("received line:", data);
             received_line = data;
             currentype = "msg";
-            chatwindow.botSays(data);
+            chatwindow.botSays(data.slice(2,-2));
         });
         return received_line;
     },
