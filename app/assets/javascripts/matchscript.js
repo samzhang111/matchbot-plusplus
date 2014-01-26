@@ -33,12 +33,11 @@ $(document).ready(function() {
 	};
 
 	*/
-
 	var matchtext = [
-		["##12", .85, "awan", "hello there"], 
-		["##12", .65, "atwo", "um, no"],
-		["##12", .15, "atree", "creativity ftw"],
-	]
+		["##12", .85, "", "<span>:</span> Bubbly"], 
+		["##12", .65, "", "<span>Talking style:</span> Casual-fun"],
+		["##12", .15, "", "<span>Talking style:</span> Internet"],
+	];
 
 	var addMatches = function() {
 
@@ -53,12 +52,12 @@ $(document).ready(function() {
 			for (var j=0; j<convoLen; j++) {
 				var speaker = "";
 				if (j%2==0) {
-					speaker = "<span>MatchBot</span>";
+					speaker = "";
 				}
 				else {
 					speaker = "<span>" + matchtext[i][1] + "</span>";
 				}
-				$(item + " .snippet").append(speaker + ": "+ matchtext[i][j+3] + "<br>");
+				$(item + " .snippet").append(matchtext[i][j+3] + "<br>");
 			    
 			}
 		};
@@ -69,6 +68,5 @@ $(document).ready(function() {
 	
 
 	addMatches();
-
 	 
 });

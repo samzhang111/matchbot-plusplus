@@ -104,7 +104,7 @@ class Calculator(dbus.service.Object):
     a = str(a)
     self.create_session(session_id)
     i = self.inc_session(session_id)
-    if (i/self.QSpacing < len(questions)):
+    if (i/self.QSpacing < len(questions) and False):
       if (i%self.QSpacing == 0):
         return(questions[i/self.QSpacing])
       elif (i%self.QSpacing == 1):

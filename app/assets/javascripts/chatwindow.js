@@ -9,7 +9,7 @@ var chatwindow = {
     allresponses: [],
     email: "",
     chars_typed: 0,
-    CONVO_LIMIT: 20,
+    CONVO_LIMIT: 200,
     currenttype: "first",
 
     send_data: function() {

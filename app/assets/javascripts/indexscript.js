@@ -1,9 +1,10 @@
 $(document).ready(function() {
+    var intro = "Looking for love?";
     $("#submit").hide();
     // Initialization
-    chatwindow.botSays("Tell me about yourself!");
+    chatwindow.botSays(intro);
     //chatwindow.init()
-    
+    chatwindow.currenttype = "msg";
     $("#userinput").keypress(function(e) {
         if (e.which == 13) {
             var uIn = $('input[name=inputtext]').val();
@@ -14,6 +15,7 @@ $(document).ready(function() {
             if (chatwindow.chars_typed > chatwindow.CONVO_LIMIT & chatwindow.currenttype != "email") {
                 chatwindow.currenttype="last";
             }
+
             if (chatwindow.currenttype == "email") {
                 if (isEmail(uIn)) {
                     chatwindow.email = uIn;
@@ -22,6 +24,7 @@ $(document).ready(function() {
                 else {
                     chatwindow.botSays("Oh no! Not an e-mail! Try again?");
                 }
+                
             }
             
             if (chatwindow.currenttype == "msg") {

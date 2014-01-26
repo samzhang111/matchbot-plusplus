@@ -41,13 +41,14 @@ class UsersController < ApplicationController
       snippet = "default snippet"
       email = (u.email).split('@')[0]
 
-      if matches.size > 3
-        3.times { |i|
-          if matches[i][1] < likeness
-            matches[i]=[u.id, likeness*100, email, snippet]
-            break
-          end
-        }
+      if matches.size >= 3
+        if matches[0][1] < likeness
+          matches[0]=[u.id, likeness*100, email, snippet]
+        elsif matches[1][1] < likeness
+          matches[1]=[u.id, likeness*100, email, snippet]
+        elsif matches[2][1] < likeness
+          matches[3]=[u.id, likeness*100, email, snippet]
+        end
       elsif matches.size < 3
         matches.append([u.id, likeness*100,email,snippet])
       end
@@ -98,7 +99,7 @@ class UsersController < ApplicationController
         score += [one_freqs[word], two_freqs[word] ].min
       end
     end
-
+    puts one.email, two.email, score
     # normalize score by higher total_words
     # if we don't do this, people who talk A LOT will
     # tend to have higher scores
