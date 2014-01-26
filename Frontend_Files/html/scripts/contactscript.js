@@ -10,13 +10,18 @@ $(document).ready(function() {
     // Message handlers
     chatwindow.botSays("So you want to talk! What would you like to say?");
 
+    var sendComment = function(comment) {
+        ///AJAX stuff here
+        console.log("DO AJAX STUFF HERE");
+    };
+
     $("#userinput").keypress(function(e) {
         if(e.which == 13) {
         	var toAdd = $('input[name=inputtext]').val();
             chatwindow.userSays(toAdd);
 
             if (state=="first") {
-                commentObj.comment += toAdd;
+                commentObj.comment += toAdd + " ";
                 state = "next";
                 chatwindow.botSays("Okay. Anything else?");
             }
@@ -27,9 +32,11 @@ $(document).ready(function() {
                 state = "email";
             }
 
-            else if (state == "email") {
+            else {
                 if (isEmail(toAdd)) {
+                    commentObj.email = toAdd;
                     chatwindow.botSays("Cool, thanks! Bye.");
+                    sendComment(commentObj);
                     alert("Thanks for your feedback! Check out our About page.");
                     window.location.replace("about.html");
                 }
@@ -38,6 +45,7 @@ $(document).ready(function() {
                 }
             }
         }
+
     });
 	
 });
