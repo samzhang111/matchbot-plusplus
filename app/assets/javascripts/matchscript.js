@@ -34,9 +34,9 @@ $(document).ready(function() {
 
 	*/
 	var matchtext = [
-		["##12", .85, "", "<span>:</span> Bubbly"], 
-		["##12", .65, "", "<span>Talking style:</span> Casual-fun"],
-		["##12", .15, "", "<span>Talking style:</span> Internet"],
+		["##12", .85, "", "Conversation snippet goes here"], 
+		["##12", .65, "", "Conversation snippet goes here"],
+		["##12", .15, "", "Conversation snippet goes here"],
 	];
 
 	var addMatches = function() {

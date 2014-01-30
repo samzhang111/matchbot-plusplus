@@ -30,7 +30,7 @@ $(document).ready(function() {
 		var promptmsg = "Send " + recip + " an e-mail! Write your message below:";
 		var response = prompt(promptmsg);
 		"Send " + $(".email", this).text() + " an e-mail! Write your message below:";
-		sendmatchmail(response, recip);
+		//sendmatchmail(response, recip);
 		alert("Response sent. Good luck!");
 	});
 });

@@ -99,7 +99,7 @@ class UsersController < ApplicationController
         score += [one_freqs[word], two_freqs[word] ].min
       end
     end
-    puts one.email, two.email, score
+    puts one_freqs, two_freqs
     # normalize score by higher total_words
     # if we don't do this, people who talk A LOT will
     # tend to have higher scores

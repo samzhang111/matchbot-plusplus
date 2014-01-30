@@ -8,14 +8,14 @@ chatbot using PyAIML.
 # -*- coding: utf-8 -*-
 # file: server.py
  
-from PyQt4.QtCore import *
 import math
 import dbus
 import dbus.service
-from dbus.mainloop.qt import DBusQtMainLoop
+from dbus.mainloop.glib import DBusGMainLoop
 import aiml
 import sys
 import pickle
+import gobject
 
 # Create a Kernel object.
 kern = aiml.Kernel()
@@ -122,9 +122,11 @@ class Calculator(dbus.service.Object):
     print retval
     return retval
 
-DBusQtMainLoop(set_as_default = True)
-app = QCoreApplication([])
+#DBusQtMainLoop(set_as_default = True)
+#app = QCoreApplication([])
+#app.exec_()
+
+DBusGMainLoop(set_as_default=True)
+loop = gobject.MainLoop()
 calc = Calculator()
-app.exec_()
-
-
+loop.run()
