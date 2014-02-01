@@ -1,1 +1,1 @@
--e git://anongit.freedesktop.org/dbus/dbus-python
+redis==2.4.13
