@@ -103,7 +103,6 @@ GEM
       rspec-core (~> 2.13.0)
       rspec-expectations (~> 2.13.0)
       rspec-mocks (~> 2.13.0)
-    ruby-dbus (0.10.0)
     rubyzip (0.9.9)
     sass (3.2.13)
     sass-rails (4.0.1)
@@ -160,8 +159,8 @@ DEPENDENCIES
   pg (= 0.15.1)
   rails (= 4.0.2)
   rails_12factor (= 0.0.2)
+  rails_serve_static_assets
   rspec-rails (= 2.13.1)
-  ruby-dbus (= 0.10.0)
   sass-rails (= 4.0.1)
   sdoc (= 0.3.20)
   selenium-webdriver (= 2.35.1)
