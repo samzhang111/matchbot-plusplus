@@ -78,10 +78,4 @@ Matchbot::Application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
-  config.assets.precompile += %w (aboutscript.js)
-  config.assets.precompile += %w (chatwindow.js)
-  config.assets.precompile += %w (contactscript.js)
-  config.assets.precompile += %w (indexscript.js)
-  config.assets.precompile += %w (matcheffects.js)
-  config.assets.precompile += %w (matchscript.js)
 end
