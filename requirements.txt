@@ -1,1 +1,0 @@
--e git://anongit.freedesktop.org/dbus/dbus-python
