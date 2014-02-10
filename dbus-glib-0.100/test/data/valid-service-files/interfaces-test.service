@@ -1,3 +1,0 @@
-[D-BUS Service]
-Name=org.freedesktop.DBus.GLib.Test.Interfaces
-Exec=/home/sam/code/matchbot/dbus-glib-0.100/test/interfaces/test-service
