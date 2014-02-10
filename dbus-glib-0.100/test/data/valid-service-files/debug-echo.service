@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=org.freedesktop.DBus.GLib.TestEchoService
+Exec=/home/sam/code/matchbot/dbus-glib-0.100/test/test-service
