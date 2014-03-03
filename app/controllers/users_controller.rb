@@ -88,7 +88,6 @@ class UsersController < ApplicationController
 =end
 
   def similarity(one, two)
-
     score = 0.0
     one_freqs = JSON[one.freqs]
     two_freqs = JSON[two.freqs]
@@ -111,7 +110,10 @@ class UsersController < ApplicationController
     larger = [one.avg_length, two.avg_length].max
 
     score *= smaller/larger
-
+    
+    logger.debug "1: #{one.inspect}\t2: #{two.inspect}\t s: #{score}"
+    
+    score
   end
 
 end
