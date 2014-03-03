@@ -47,7 +47,7 @@ var chatwindow = {
         $.get("/say_bot", line).done(function (data) {
             received_line = data;
             currentype = "msg";
-            chatwindow.botSays(data.slice(2,-2));
+            chatwindow.botSays(data);
         });
     },
 

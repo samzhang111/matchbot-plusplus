@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 https://github.com/samzhang111/heroku-buildpack-fakesu.git
 https://github.com/samzhang111/heroku-dbus-buildpack.git
 https://github.com/heroku/heroku-buildpack-ruby.git
+=======
+git://github.com/heroku/heroku-buildpack-python.git
+git://github.com/heroku/heroku-buildpack-ruby.git
+>>>>>>> master
