@@ -12,7 +12,8 @@ $(document).ready(function() {
             chatwindow.userSays(uIn);
 
             chatwindow.chars_typed += uIn.length;
-            if (chatwindow.chars_typed > chatwindow.CONVO_LIMIT & chatwindow.currenttype != "email") {
+            if (chatwindow.chars_typed > chatwindow.CONVO_LIMIT && chatwindow.currenttype != "email" && chatwindow.currenttype != "last") {
+                chatwindow.calculate(uIn);
                 chatwindow.currenttype="last";
             }
 
@@ -39,7 +40,6 @@ $(document).ready(function() {
             if (chatwindow.currenttype == "last") {
                 chatwindow.botSays("One last thing - we need your e-mail so that future matches can contact you. What's your e-mail?");
                 chatwindow.currenttype = "email";
-
             }
         }
     });

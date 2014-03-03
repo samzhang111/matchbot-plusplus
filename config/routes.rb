@@ -3,6 +3,7 @@ Matchbot::Application.routes.draw do
   get "response/destroy"
   resources :users
   root 'users#new'
+  match '/', to: 'static_pages#home', via: 'get'
   match '/contact', to: 'static_pages#contact', via: 'get'
   match '/about', to: 'static_pages#about', via: 'get'
   match '/matches', to: 'static_pages#matches', via: 'get'
